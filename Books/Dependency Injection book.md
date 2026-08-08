@@ -3,6 +3,8 @@ Dependency injection is a set of software design principles and patterns that en
 
 ### Good DI containers for Dotnet Core
 - [SimpleInjector](https://www.nuget.org/packages/SimpleInjector)
+	- [docs](https://docs.simpleinjector.org/en/latest/index.html)
+	- [use with built in IServicesCollection](https://docs.simpleinjector.org/en/latest/servicecollectionintegration.html)
 - [Decoratr](https://www.nuget.org/packages/DecoratR)
 ### How do I decide if a dependency should be Injected?
 Dependency is a good candidate to be dependency injected if:
@@ -21,6 +23,7 @@ Dependency is a good candidate to be dependency injected if:
 	- Chapter 4.2
 - Method Injection 
 	- How can we inject a Dependency into a class when it’s different for each operation?Supply it as a method parameter.
+	- Usual method definition looks like this `Method(DataClass data, IOptions options){...}` where `data` is the data to be operated followed by several injected args that provide functionality/context.
 	- Chapter 4.3
 - Property Injection
 	- How do we enable DI as an option in a class when we have a good [[#Local Default]]? Expose a writable property that lets callers supply a Dependency if they want to override the default behavior.
@@ -34,6 +37,7 @@ Dependency is a good candidate to be dependency injected if:
 	- These dependencies should be handled via the composition root instead.
 - Temporal Coupling
 	- Implicit relationship between two or more members of a class, requiring clients to invoke one member after the other.
+
 ### Questions
 1. how do I implement x with dependency injection
 	1. caching
