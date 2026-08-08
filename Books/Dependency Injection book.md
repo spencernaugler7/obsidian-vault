@@ -25,6 +25,10 @@ Dependency is a good candidate to be dependency injected if:
 	- Chapter 4.4
 
 ### DI Anti-Patterns
+- Control Freak
+	- initializing concrete dependencies that are Volatile (changes frequently) instead of providing them via the di patterns.
+		- new keyword, no interfaces
+	- These dependencies should be handled via the composition root instead.
 - Temporal Coupling
 	- Implicit relationship between two or more members of a class, requiring clients to invoke one member after the other.
 ### Questions

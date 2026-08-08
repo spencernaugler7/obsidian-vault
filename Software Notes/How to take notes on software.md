@@ -1,4 +1,4 @@
-https://www.linkedin.com/pulse/how-take-notes-complex-software-igor-polkovnikov/
+[article](https://www.linkedin.com/pulse/how-take-notes-complex-software-igor-polkovnikov/)
 
 ![[Pasted image 20260804205350.png]]
 
