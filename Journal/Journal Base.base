@@ -4,6 +4,8 @@ views:
     filters:
       and:
         - file.inFolder("Journal")
+    order:
+      - file.name
     sort:
-      - property: file.ctime
+      - property: file.mtime
         direction: DESC
