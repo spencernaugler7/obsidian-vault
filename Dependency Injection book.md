@@ -1,5 +1,8 @@
+### What is DI?
+Dependency injection is a set of software design principles and patterns that enables you to develop loosely coupled code.
 
-### Dependency is a good candidate to be dependency injected if:
+### How do I decide if a dependency should be Injected?
+Dependency is a good candidate to be dependency injected if:
 1. The dependency introduces a requirement to set up and configure a runtime environment. for the application.
 	1. Examples: Database libraries, configuration files
 2. The dependency doesn't exist yet, or still in development
@@ -8,21 +11,22 @@
 	1. Examples: random numbers, algorithms that depend on the current date/time
 5. The dependency is not expected to be stable (likely to change in the future)
 
-### What is DI?
-Dependency injection is a set of software design principles and patterns that enables you to develop loosely coupled code.
-
 ### DI Patterns
-- How do we guarantee that a necessary [[#Volatile Dependency]] is always available to the class we’re currently developing?
-	- Require all callers to supply the [[#Volatile Dependency]] as a parameter to the class’s constructor.
-	- Constructor Injection
+- Constructor Injection
+	- How do we guarantee that a necessary [[#Volatile Dependency]] is always available to the class we’re currently developing? Require all callers to supply the [[#Volatile Dependency]] as a parameter to the class’s constructor.
+	- Use if a dependency should be required. Ensures the class cannot be created without supplying the dependency.
 	- Chapter 4.2
--  How can we inject a Dependency into a class when it’s different for each operation?
-	- Supply it as a method parameter.
-	- Use Method Injection 
+- Method Injection 
+	- How can we inject a Dependency into a class when it’s different for each operation?Supply it as a method parameter.
 	- Chapter 4.3
-- How do we enable DI as an option in a class when we have a good [[#Local Default]]?
-	- Expose a writable property that lets callers supply a Dependency if they want to override the default behavior.
+- Property Injection
+	- How do we enable DI as an option in a class when we have a good [[#Local Default]]? Expose a writable property that lets callers supply a Dependency if they want to override the default behavior.
+	- Best used when the Dependency is optional. If the dependency is required use [[#Constructor Injection]] 
+	- Chapter 4.4
 
+### DI Anti-Patterns
+- Temporal Coupling
+	- Implicit relationship between two or more members of a class, requiring clients to invoke one member after the other.
 ### Questions
 1. how do I implement x with dependency injection
 	1. caching
@@ -35,6 +39,8 @@ Dependency injection is a set of software design principles and patterns that en
 	7. authorization
 
 ### Vocab
+###### Constructor Injection
+Supply a dependency through a classes constructor. Throw exceptions/errors if this dependency is not provided or null.
 ###### Volatile Dependency
 Dependency that changes or is not finished.
 ###### Local Default
