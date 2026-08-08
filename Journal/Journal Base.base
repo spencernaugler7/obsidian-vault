@@ -1,0 +1,9 @@
+views:
+  - type: list
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Journal")
+    sort:
+      - property: file.ctime
+        direction: DESC
