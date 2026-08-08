@@ -1,6 +1,9 @@
 ### What is DI?
 Dependency injection is a set of software design principles and patterns that enables you to develop loosely coupled code.
 
+### Good DI containers for Dotnet Core
+- [SimpleInjector](https://www.nuget.org/packages/SimpleInjector)
+- [Decoratr](https://www.nuget.org/packages/DecoratR)
 ### How do I decide if a dependency should be Injected?
 Dependency is a good candidate to be dependency injected if:
 1. The dependency introduces a requirement to set up and configure a runtime environment. for the application.
