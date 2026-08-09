@@ -1,0 +1,2 @@
+- [query external transaction insert](https://www.voyceglobal.com/APIAccount/Help/Api/POST-Query-ExternalOPITransactionInsert)
+	- used to create over the phone interpretations in our system. These can originate from martti

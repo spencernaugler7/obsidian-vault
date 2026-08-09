@@ -1,0 +1,9 @@
+- How do I model complex software interactions graphically?
+	- need to be able to visually see the interactions at this point.
+- What is cloudbreak?
+- How does salesforce enter the picture? We have an Interaction record id specifically for use in salesforce from the beginning of a call to the end of it.
+- What is the difference between an Interaction id and a transaction id as it relates to ticket [EUE-60](https://cloudbreak.atlassian.net/browse/EUE-60)
+- Where is kafka used?
+- Where can I find details about in interaction record?
+    - Go to database.
+- What is the purpose of the "{tablename}Y" tables: CodeListY, LanguageY
