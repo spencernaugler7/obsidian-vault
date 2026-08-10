@@ -1,11 +1,8 @@
 ---
-title: "Obsidian Markdown Cheat Sheet"
-source: "https://www.markdowntools.io/obsidian-cheat-sheet"
+title: Obsidian Markdown Cheat Sheet
+source: https://www.markdowntools.io/obsidian-cheat-sheet
 verified: 2026-07-18
 tags:
-  - markdown
-  - obsidian
-  - cheat-sheet
 ---
 
 # Obsidian Markdown Cheat Sheet
@@ -18,8 +15,8 @@ Every core Obsidian Markdown syntax on one note, each section verified against t
 ## Markdown Basics
 
 Obsidian fully supports standard Markdown — headings, bold, and italic work exactly as they do in CommonMark.
-
 ### Headings
+
 
 ```markdown
 # Heading 1
@@ -83,7 +80,7 @@ Link to a specific heading; add more # symbols for subheadings
 
 Link to a specific block; type ^ after # to pick from suggestions
 
-- Link text may not contain the characters # | ^ : %% [[ ]].
+- Link text may not contain the characters `# | ^ : %% [[ ]]`.
 - Block references are Obsidian-specific and will not resolve outside Obsidian.
 
 > Source: [Obsidian Help](https://help.obsidian.md/links) · Last verified 2026-07-18
@@ -146,7 +143,7 @@ Embed a vault image; |100 sets the width, |640x480 sets width and height
 ![[document.pdf#page=3]]
 ```
 
-Embed a PDF; #page=N opens a specific page, #height=400 sets the viewer height
+Embed a PDF; page=N opens a specific page, height=400 sets the viewer height
 
 > Source: [Obsidian Help](https://help.obsidian.md/embeds) · Last verified 2026-07-18
 
@@ -257,8 +254,8 @@ Click a tag to search for it across the vault
 Slashes create a hierarchy; searching tag:inbox also matches nested tags
 
 - No blank spaces — use camelCase, PascalCase, snake_case, or kebab-case for multiple words.
-- A tag must contain at least one non-numeric character: #1984 is not valid, #y1984 is.
-- Tags are case-insensitive: #tag and #TAG are treated as the same tag.
+- A tag must contain at least one non-numeric character: #1984 is not valid, `#y1984` is.
+- Tags are case-insensitive: `#tag` and `#TAG` are treated as the same tag.
 
 > Source: [Obsidian Help](https://help.obsidian.md/tags) · Last verified 2026-07-18
 
@@ -309,7 +306,7 @@ Block comments span multiple lines.
 
 Hide whole paragraphs
 
-- Obsidian-only syntax — the %% markers render as literal text in other Markdown apps.
+- Obsidian-only syntax — the `%%` markers render as literal text in other Markdown apps.
 
 > Source: [Obsidian Help](https://help.obsidian.md/syntax#Comments) · Last verified 2026-07-18
 
@@ -461,7 +458,7 @@ No Markdown syntax exists for underline; raw HTML works, but Markdown inside HTM
 | Tables | `\| A \| B \|` | partial | yes | GFM extension; Obsidian adds Live Preview table editing. |
 | Task lists | `- [x] done` | partial | yes | GFM extension; any character inside the brackets marks a task complete in Obsidian. |
 | Footnotes | `[^1]` | partial | yes | GFM extension; inline ^[...] footnotes are Obsidian-only. |
-| Tags | `#tag` | no | yes | Renders as a plain heading-less #word elsewhere; searchable metadata in Obsidian. |
+| Tags | `#tag` | no | yes | Renders as a plain heading-less word elsewhere; searchable metadata in Obsidian. |
 | Wikilinks | `[[Note]]` | no | yes | Obsidian-only; renders as literal brackets in CommonMark/GFM. |
 | Embeds | `![[Note]]` | no | yes | Obsidian-only transclusion syntax. |
 | Callouts | `> [!note]` | partial | yes | GitHub alerts support five fixed types; Obsidian adds 13 types, aliases, folding, and nesting. |
