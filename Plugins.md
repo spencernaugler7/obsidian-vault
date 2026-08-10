@@ -4,3 +4,4 @@
 - tagfolder
 - d2
 - open in terminal
+- calandar
