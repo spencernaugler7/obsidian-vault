@@ -1,3 +1,9 @@
+---
+tags:
+  - Work
+  - Codebase
+---
+
 ```d2
 network: {
   cellTower: {

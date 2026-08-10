@@ -1,5 +1,6 @@
 ---
-tag: Books
+tags:
+  - Books
 ---
 
 ### What is DI?
