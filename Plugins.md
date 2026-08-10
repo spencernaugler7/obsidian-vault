@@ -1,0 +1,6 @@
+- editing toolbar
+- git
+- excalidraw
+- tagfolder
+- d2
+- open in terminal
