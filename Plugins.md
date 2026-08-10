@@ -1,7 +1,7 @@
-- editing toolbar
-- git
-- excalidraw
-- tagfolder
-- d2
-- open in terminal
-- calandar
+- [editing toolbar](obsidian://show-plugin?id=editing-toolbar)
+- [git](obsidian://show-plugin?id=obsidian-git)
+- [excalidraw](obsidian://show-plugin?id=obsidian-excalidraw-plugin)
+- [tagfolder](obsidian://show-plugin?id=obsidian-tagfolder)
+- [d2](obsidian://show-plugin?id=d2-obsidian)
+- [open in terminal](obsidian://show-plugin?id=open-in-terminal)
+- [calandar](obsidian://show-plugin?id=calendar)
