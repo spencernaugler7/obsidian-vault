@@ -1,6 +1,7 @@
 ### Obsidian ###
 # config dir
-.obsidian/
+.obsidian/plugins/*
+.obsidian/workspace.json
 
 
 ### macOS ###
