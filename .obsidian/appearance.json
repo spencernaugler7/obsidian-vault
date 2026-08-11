@@ -1,3 +1,5 @@
 {
-  "nativeMenus": false
+  "nativeMenus": false,
+  "cssTheme": "",
+  "showRibbon": true
 }
