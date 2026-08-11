@@ -1,3 +1,4 @@
 - [Hyper Markdown](https://hyper-markdown.org/)
 - [light phone](https://www.thelightphone.com/)
 - [principa softwarica](https://principia-softwarica.org/)
+- [Xonsh](https://xon.sh/)

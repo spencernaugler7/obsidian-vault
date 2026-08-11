@@ -158,6 +158,9 @@ Add [!type] to the first line of a blockquote. Thirteen built-in types with alia
 > Content here
 ```
 
+> [!note]
+> Content here
+
 Information callout — the fallback for unknown types
 
 ### Tip
@@ -166,6 +169,9 @@ Information callout — the fallback for unknown types
 > [!tip]
 > Content here
 ```
+
+> [!tip]
+> Content here
 
 Aliases: hint, important
 
@@ -176,6 +182,9 @@ Aliases: hint, important
 > Content here
 ```
 
+> [!warning]
+> Content here
+
 Aliases: caution, attention
 
 ### Question
@@ -185,6 +194,9 @@ Aliases: caution, attention
 > Content here
 ```
 
+> [!question]
+> Content here
+
 Aliases: help, faq
 
 ### Collapsible
@@ -193,6 +205,9 @@ Aliases: help, faq
 > [!note]- Title
 > Hidden content
 ```
+
+> [!note]- Title
+> Hidden content
 
 A minus collapses the callout by default; a plus expands it
 

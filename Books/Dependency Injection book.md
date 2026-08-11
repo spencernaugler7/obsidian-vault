@@ -2,7 +2,6 @@
 tags:
   - Books
 ---
-
 ### What is DI?
 Dependency injection is a set of software design principles and patterns that enables you to develop loosely coupled code.
 
@@ -42,6 +41,8 @@ Dependency is a good candidate to be dependency injected if:
 	- These dependencies should be handled via the composition root instead.
 - Temporal Coupling
 	- Implicit relationship between two or more members of a class, requiring clients to invoke one member after the other.
+- Abstract factory that also uses Control Freak
+	- just moves the coupling from the calling code to the new abstract factory.
 
 ### Questions
 1. how do I implement x with dependency injection
@@ -61,3 +62,6 @@ Supply a dependency through a classes constructor. Throw exceptions/errors if th
 Dependency that changes or is not finished.
 ###### Local Default
 A Local Default is a default implementation of a Dependency that originates in the same module or layer.
+
+**Foreign Default**
+Implementation of an interface that is defined in a different assembly.
