@@ -300,7 +300,7 @@ A GitHub Flavored Markdown extension, fully supported in Obsidian
 
 ## Comments
 
-Text wrapped in %% is only visible in Editing view — it disappears in Reading view and on published sites.
+Text wrapped in `%%` is only visible in Editing view — it disappears in Reading view and on published sites.
 
 ### Inline Comment
 
