@@ -465,22 +465,23 @@ No Markdown syntax exists for underline; raw HTML works, but Markdown inside HTM
 
 ## Markdown vs Obsidian: Compatibility
 
-| Feature | Syntax | CommonMark/GFM | Obsidian | Notes |
-| --- | --- | --- | --- | --- |
-| Headings, bold, italic | `# H1, **bold**, *italic*` | yes | yes | Core CommonMark syntax, identical in Obsidian. |
-| Strikethrough | `~~text~~` | partial | yes | GFM extension, not part of CommonMark. |
-| Highlight | `==text==` | no | yes | Obsidian extension; shows as literal == elsewhere. |
-| Tables | `\| A \| B \|` | partial | yes | GFM extension; Obsidian adds Live Preview table editing. |
-| Task lists | `- [x] done` | partial | yes | GFM extension; any character inside the brackets marks a task complete in Obsidian. |
-| Footnotes | `[^1]` | partial | yes | GFM extension; inline ^[...] footnotes are Obsidian-only. |
-| Tags | `#tag` | no | yes | Renders as a plain heading-less word elsewhere; searchable metadata in Obsidian. |
-| Wikilinks | `[[Note]]` | no | yes | Obsidian-only; renders as literal brackets in CommonMark/GFM. |
-| Embeds | `![[Note]]` | no | yes | Obsidian-only transclusion syntax. |
-| Callouts | `> [!note]` | partial | yes | GitHub alerts support five fixed types; Obsidian adds 13 types, aliases, folding, and nesting. |
-| Comments | `%%hidden%%` | no | yes | Visible as literal text outside Obsidian; hidden in Obsidian Reading view. |
-| Math | `$x^2$` | no | yes | Not in CommonMark or GFM core; Obsidian renders via MathJax. |
-| Mermaid diagrams | `` ```mermaid `` | partial | yes | GitHub.com also renders mermaid blocks; plain CommonMark/GFM treat them as code. |
-| Properties (frontmatter) | `---<br>key: value<br>---` | no | yes | Not parsed by CommonMark/GFM; Obsidian turns the YAML block into typed note properties. |
-| Markdown inside HTML | `<div>**text**</div>` | partial | no | Obsidian deliberately skips Markdown inside HTML elements; CommonMark processes inline Markdown around HTML. |
+| Feature                  | Syntax                     | CommonMark/GFM | Obsidian | Notes                                                                                                        |
+| ------------------------ | -------------------------- | -------------- | -------- | ------------------------------------------------------------------------------------------------------------ |
+| Headings, bold, italic   | `# H1, **bold**, *italic*` | yes            | yes      | Core CommonMark syntax, identical in Obsidian.                                                               |
+| Strikethrough            | `~~text~~`                 | partial        | yes      | GFM extension, not part of CommonMark.                                                                       |
+| Highlight                | `==text==`                 | no             | yes      | Obsidian extension; shows as literal == elsewhere.                                                           |
+| Tables                   | `\| A \| B \|`             | partial        | yes      | GFM extension; Obsidian adds Live Preview table editing.                                                     |
+| Task lists               | `- [x] done`               | partial        | yes      | GFM extension; any character inside the brackets marks a task complete in Obsidian.                          |
+| Footnotes                | `[^1]`                     | partial        | yes      | GFM extension; inline ^[...] footnotes are Obsidian-only.                                                    |
+| Tags                     | `#tag`                     | no             | yes      | Renders as a plain heading-less word elsewhere; searchable metadata in Obsidian.                             |
+| Wikilinks                | `[[Note]]`                 | no             | yes      | Obsidian-only; renders as literal brackets in CommonMark/GFM.                                                |
+| Embeds                   | `![[Note]]`                | no             | yes      | Obsidian-only transclusion syntax.                                                                           |
+| Callouts                 | `> [!note]`                | partial        | yes      | GitHub alerts support five fixed types; Obsidian adds 13 types, aliases, folding, and nesting.               |
+| Comments                 | `%%hidden%%`               | no             | yes      | Visible as literal text outside Obsidian; hidden in Obsidian Reading view.                                   |
+| Math                     | `$x^2$`                    | no             | yes      | Not in CommonMark or GFM core; Obsidian renders via MathJax.                                                 |
+| Mermaid diagrams         | `` ```mermaid ``           | partial        | yes      | GitHub.com also renders mermaid blocks; plain CommonMark/GFM treat them as code.                             |
+| Properties (frontmatter) | `---<br>key: value<br>---` | no             | yes      | Not parsed by CommonMark/GFM; Obsidian turns the YAML block into typed note properties.                      |
+| Markdown inside HTML     | `<div>**text**</div>`      | partial        | no       | Obsidian deliberately skips Markdown inside HTML elements; CommonMark processes inline Markdown around HTML. |
+|                          |                            |                |          |                                                                                                              |
 
 %% Generated from the same structured source as https://www.markdowntools.io/obsidian-cheat-sheet. Regenerate with `npm run generate-obsidian-cheatsheet-md` instead of editing by hand. %%
