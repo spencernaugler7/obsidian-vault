@@ -2,7 +2,7 @@
 - [ ] find some vehicles of intrest (toyota tacoma, or ford ranger)
 - [ ] clean up house
 	- [ ] get works for toilet
-- [ ] dissasemble drums
+- [ ] disassemble drums
 - [ ] get containers for moving.
 - [ ] clean up closet and remove clothes I don't want.
 - [ ] get new shoes, vivo barefoots, hookas, watershoe type stuff
