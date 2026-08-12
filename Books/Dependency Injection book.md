@@ -64,4 +64,4 @@ Dependency that changes or is not finished.
 A Local Default is a default implementation of a Dependency that originates in the same module or layer.
 
 **Foreign Default**
-Implementation of an interface that is defined in a different assembly.
+single default Implementation of an interface that is defined in a different assembly. Can lead to issues with typing assemblies together.
