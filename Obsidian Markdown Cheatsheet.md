@@ -8,10 +8,6 @@ tags:
 # Obsidian Markdown Cheat Sheet
 
 Every core Obsidian Markdown syntax on one note, each section verified against the official Obsidian Help. Drop this file into any vault — it renders entirely with built-in Obsidian features, no plugins required.
-
-> [!tip] Stay in sync
-> This note mirrors https://www.markdowntools.io/obsidian-cheat-sheet — source version 2026-07-18.
-
 ## Markdown Basics
 
 Obsidian fully supports standard Markdown — headings, bold, and italic work exactly as they do in CommonMark.
@@ -44,6 +40,13 @@ Single asterisks; single underscores (_text_) also work.
 
 > Source: [Obsidian Help](https://help.obsidian.md/syntax) · Last verified 2026-07-18
 
+### Horizontal Lines
+```markdown
+___
+```
+triple underscores work for obsidian markdown.
+
+___
 ## Wikilinks (Internal Links)
 
 Wikilinks connect notes by name inside double brackets — no file path required. Obsidian can update them automatically when you rename a note.
@@ -218,7 +221,7 @@ A minus collapses the callout by default; a plus expands it
 
 ## Properties (YAML Frontmatter)
 
-YAML between --- lines at the very top of a note. Property types: text, list, number, checkbox, date, date & time. Default properties: tags, aliases, cssclasses.
+YAML between `---` lines at the very top of a note. Property types: text, list, number, checkbox, date, date & time. Default properties: tags, aliases, cssclasses.
 
 ### YAML Frontmatter
 
@@ -335,8 +338,9 @@ A sentence with a note.[^1]
 [^1]: The referenced text.
 ```
 
-Named footnotes like [^note] also work; they still render as numbers
+Named footnotes like [^1] also work; they still render as numbers
 
+[^1]: example footnote
 ### Inline Footnote
 
 ```markdown
@@ -344,6 +348,7 @@ An inline footnote.^[The note text goes here.]
 ```
 
 Caret goes outside the brackets; works in Reading view only, not in Live Preview
+^[inline footnote example]
 
 > Source: [Obsidian Help](https://help.obsidian.md/syntax#Footnotes) · Last verified 2026-07-18
 
