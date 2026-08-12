@@ -39,10 +39,13 @@ Dependency is a good candidate to be dependency injected if:
 	- initializing concrete dependencies that are Volatile (changes frequently) instead of providing them via the di patterns.
 		- new keyword, no interfaces
 	- These dependencies should be handled via the composition root instead.
+	- can be done through overloaded constructors. 
 - Temporal Coupling
 	- Implicit relationship between two or more members of a class, requiring clients to invoke one member after the other.
 - Abstract factory that also uses Control Freak
 	- just moves the coupling from the calling code to the new abstract factory.
+- Service Locator
+	- 
 
 ### Questions
 1. how do I implement x with dependency injection
@@ -64,4 +67,4 @@ Dependency that changes or is not finished.
 A Local Default is a default implementation of a Dependency that originates in the same module or layer.
 
 **Foreign Default**
-Implementation of an interface that is defined in a different assembly.
+single default Implementation of an interface that is defined in a different assembly. Can lead to issues with typing assemblies together.
