@@ -330,8 +330,6 @@ Hide whole paragraphs
 
 ## Footnotes
 
-### Footnote
-
 ```markdown
 A sentence with a note.[^1]
 
