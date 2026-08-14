@@ -36,8 +36,22 @@ ___
 - [webui frontend](https://webui.me/docs.html#/)
   - [Csharp lib](https://github.com/salvadordf/WebUI4CSharp)
 ___
-## Obsidan plugin 
+## File include obsidan plugin
+Want to use this to edit config files from multiple sources from one easy place obsidian.
 
 - Make an obsidian plugin that can embed a file in a markdown note from any directory on the filesystem. 
 - We can also signify a line number range or several ranges to embed the file. 
 - We can also edit this file directly from the markdown note.
+---
+## File include obsidan plugin
+Want to use this to edit config files from multiple sources from one easy place obsidian.
+
+- Make an obsidian plugin that can embed a file in a markdown note from any directory on the filesystem. 
+- We can also signify a line number range or several ranges to embed the file. 
+- We can also edit this file directly from the markdown note.
+___
+## Git source obsidian plugin.
+Want to create an obsidian plugin that can pull a file from some git repo. 
+this file is then downloaded and automatically updates
+
+- git url is specificed in frontmatter. I run one command and it pulls the latest version of that file from repo and inserts the contents into the note. If contents already exist it updates the existing 
