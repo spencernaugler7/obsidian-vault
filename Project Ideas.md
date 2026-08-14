@@ -44,7 +44,9 @@ Want to use this to edit config files from multiple sources from one easy place 
 - We can also edit this file directly from the markdown note.
 ___
 ## Git source obsidian plugin.
-Want to create an obsidian plugin that can pull a file from some git repo. 
-this file is then downloaded and automatically updates from the source with a command
+Want to create an obsidian plugin that can pull a markdown file from some git repo. 
+this file is then downloaded and automatically updates from the source with a command. uses the "source" frontmatter tag to descied the location to pull form.
 
-- git url is specificed in frontmatter. I run one command and it pulls the latest version of that file from repo and inserts the contents into the note. If contents already exist it updates the existing 
+- git url is specified in frontmatter. I run one command and it pulls the latest version of that file from repo and inserts the contents into the note. If contents already exist it updates the existing
+- perhaps implement with git submodules?
+- expand functionality to handle user edits with some kind of merge editor.
