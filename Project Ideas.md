@@ -1,4 +1,4 @@
-## Make whichkey for the shell.
+## Make which-key for the shell.
 - assign commands to emacs like key chords.
 - create a tui that displays the keyboard.
 - should look like
