@@ -15,7 +15,6 @@
 - [obsidian tasks](obsidian://show-plugin?id=obsidian-tasks-plugin)
 - [tagfolder](obsidian://show-plugin?id=obsidian-tagfolder)
 - [execute code](obsidian://show-plugin?id=execute-code)
-- [link file](obsidian://show-plugin?id=external-file-embed-and-link)
 
 ## Enable cli
 Settings -> General -> command line interface.
