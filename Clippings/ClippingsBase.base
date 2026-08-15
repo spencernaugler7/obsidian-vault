@@ -14,3 +14,5 @@ views:
     sort:
       - property: created
         direction: DESC
+    columnSize:
+      file.name: 435

@@ -1,13 +1,14 @@
 ---
-title: "Gerrymandering won. It’s time to change the rules."
-source: "https://www.bostonglobe.com/2026/08/13/opinion/gerrymandering-proportional-representation/"
+title: Gerrymandering won. It’s time to change the rules.
+source: https://www.bostonglobe.com/2026/08/13/opinion/gerrymandering-proportional-representation/
 author:
   - "[[Ruth Greenwood]]"
 published: 2026-08-13
 created: 2026-08-14
-description: "The Supreme Court has closed off nearly every legal avenue for challenging partisan gerrymandering. The answer isn’t better maps. It’s proportional representation."
+description: The Supreme Court has closed off nearly every legal avenue for challenging partisan gerrymandering. The answer isn’t better maps. It’s proportional representation.
 tags:
-  - "clippings"
+  - clippings
+  - politics
 ---
 *Ruth Greenwood is the director of the Election Law Clinic at Harvard Law School.*
 

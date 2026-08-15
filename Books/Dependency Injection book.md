@@ -1,6 +1,6 @@
 ---
 tags:
-  - Books
+  - books
 ---
 ### What is DI?
 Dependency injection is a set of software design principles and patterns that enables you to develop loosely coupled code.
