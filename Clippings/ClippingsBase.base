@@ -8,6 +8,9 @@ views:
     groupBy:
       property: created
       direction: DESC
+    order:
+      - file.name
+      - description
     sort:
       - property: created
         direction: DESC

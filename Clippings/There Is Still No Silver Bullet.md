@@ -1,13 +1,13 @@
 ---
-title: "There Is Still No Silver Bullet"
-source: "https://cekrem.github.io/posts/there-is-still-no-silver-bullet/"
+title: There Is Still No Silver Bullet
+source: https://cekrem.github.io/posts/there-is-still-no-silver-bullet/
 author:
   - "[[Christian Ekrem]]"
 published: 2026-08-12
 created: 2026-08-14
-description: "Fred Brooks predicted in 1986 that no single technology would ever make software development ten times faster. He even had a section on AI. Forty years later, his essay finally has a worthy opponent."
+description: Christian Ekrem's views on how software development has built to handle unnecessary things that don't have much value.
 tags:
-  - "clippings"
+  - clippings
 ---
 > Of all the monsters that fill the nightmares of our folklore, none terrify more than werewolves, because they transform unexpectedly from the familiar into horrors. For these, one seeks bullets of silver that can magically lay them to rest.
 
