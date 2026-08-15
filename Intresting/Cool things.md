@@ -2,4 +2,6 @@
 - [light phone](https://www.thelightphone.com/)
 - [principa softwarica](https://principia-softwarica.org/)
 - [Xonsh](https://xon.sh/)
+- [Nushell](https://www.nushell.sh/)
 - [Yolk](https://elkowar.github.io/yolk/)
+- [rust desk](https://rustdesk.com/docs/en/)

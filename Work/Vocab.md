@@ -9,7 +9,8 @@
 - Voyce VIP = Voyce Intelligent Platform
     - portal used by customers and internal employees to analytics.
 - Service Item = 
-
+- LSP = Voyce: Language service provider (intpreter)
+	- any company that offers interpretation services.
 ## Jira
 
 - EUE = End User Experience
