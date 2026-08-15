@@ -240,7 +240,7 @@ app.post('/contact', async (req, res) => {
     const body = html.match(/<body[^>]*>([\s\S]*)<\/body>/)[1];
     
     res.write('event: datastar-patch-elements\n');
-    res.write(\`data: ${body}\n\n\`);
+    res.write(`data: ${body}\n\n`);
   };
   
   // Update 1: Show validation in progress
@@ -313,7 +313,7 @@ app.post('/contact', async (req, res) => {
     const body = html.match(/<body[^>]*>([\s\S]*)<\/body>/)[1];
     
     res.write('event: datastar-patch-elements\n');
-    res.write(\`data: ${body}\n\n\`);
+    res.write(`data: ${body}\n\n`);
   };
   
   sendPage({
