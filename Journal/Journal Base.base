@@ -1,5 +1,5 @@
 views:
-  - type: list
+  - type: table
     name: Table
     filters:
       and:
