@@ -11,13 +11,3 @@ views:
     sort:
       - property: created
         direction: DESC
-  - type: table
-    name: View
-    filters:
-      and:
-        - file.folder == "Clippings"
-    groupBy:
-      property: created
-      direction: DESC
-    order:
-      - file.name
