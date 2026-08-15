@@ -41,8 +41,7 @@ Without much adjustments (differentiating users by [session IDs](https://gist.gi
     - [`data-on-interval`](https://data-star.dev/reference/attributes#data-on-interval)
     - [`data-on-signal-patch`](https://data-star.dev/reference/attributes#data-on-signal-patch)
 
-> [!note]
->The string evaluated by `data-on` attributes are Datastar [expressions](https://data-star.dev/guide/datastar_expressions), you can do more than using only Backend Actions.
+> [!note]- The string evaluated by `data-on` attributes are Datastar [expressions](https://data-star.dev/guide/datastar_expressions), you can do more than using only Backend Actions.
 >`data-on:click="confirm('Are you sure?') && @delete('/examples/delete_row/0')"`
 >Be sure to use request indicators, as they are an important UX aspect of any distributed apps: `data-indicator:_fetching`, `data-attr:disabled="$_fetching"`
 >`$_fetching` is a [signal](notes.md#signals)
@@ -59,9 +58,7 @@ Without much adjustments (differentiating users by [session IDs](https://gist.gi
 - Send the entire modified page instead of small, specific fragments.
 - Reduce the amount of endpoints needed to handle fragment updates.
 
-Additional Infos
-> [!note]
->Be sure to use [Event Bubbling](https://javascript.info/bubbling-and-capturing)
+> [!note]- Be sure to use [Event Bubbling](https://javascript.info/bubbling-and-capturing)
 >Use `data-on:pointerdown/mousedown` rather than `data-on:click` to save the time waiting for `pointerup/mouseup`.
 
 ### Morphing
@@ -69,19 +66,14 @@ Additional Infos
 - Transform the existing DOM into the new modified one, while preserving the state.
 - Here's an [article](https://dev.37signals.com/a-happier-happy-path-in-turbo-with-morphing/) written by Jorge Manrubia, demonstrating the difference between `<body>` swapping and morphing.
 
-> [!note]
->It can also be called "[Patching](https://data-star.dev/guide/getting_started#patching-elements)": `Create`, `Update` and `Delete` elements
+> [!note]- It can also be called "[Patching](https://data-star.dev/guide/getting_started#patching-elements)": `Create`, `Update` and `Delete` elements
 >There are other algorithms as well: [Morphlex](https://github.com/yippee-fun/morphlex) (the introductory [article](https://joel.drapper.me/p/morphlex/)), and Datastar's TypeScript [port](https://github.com/starfederation/datastar/blob/develop/library/src/engine/morph.ts) of Idiomorph.
 >The algorithm [retains](https://en.wikipedia.org/wiki/Retained_mode) unchanged elements, but the way we respond with the whole page is [immediate](<https://en.wikipedia.org/wiki/Immediate_mode_(computer_graphics)>).
 
 ### How to do Fat Morphing optimally
 
 This is one way of doing Fat Morphing, Datastar can do polling just fine.
-
-Optimal Fat Morphing
-
 ### CQRS
-
 - To do Fat Morphing optimally, we should limit the number of endpoints that can change the view, since we don't need to send small fragments.
 - CQRS stands for Command Query Responsibility Segregation, meaning separating the Commands and the Queries of data apart.
 - Commands: `Create`, `Update` and `Delete`
@@ -94,31 +86,22 @@ Optimal Fat Morphing
     - This action can retrieve data and watch for data changes to compute the view
     - Work Sharing, or Caching: make sure the query runs only once if multiple users are requesting the same view.
 - Long-lived Updates connection + Short-lived Commands
-
 ### Event-Driven Architecture
-
 - Queries watch for data changes by watching for new Command.
 - Whenever there's a new Command, the Queries retrieve the modified data.
 - Use the Publish-Subscribe pattern to implement Event-Driven Architecture
-
 ### [View = Function(State)](https://yagni.club/3m3anpetejc23)
-
 - By using CQRS, our app becomes the purest `view=function(state)`
 - A function turning state into view: present data using HTML, then compute it as a page ⇒ Data drives views
 - All data stored, managed, and processed by the back end.
 - On every data change, the page gets re-computed
 - Each page only needs one single function to compute the page
-
 ## SSE
-
 Suitable for real-time apps: updates can be sent in a stream that get compressed for its whole duration
-
 - Use HTTP/2 or HTTP/3 to allow for more [connections](https://github.com/alvarolm/datastar-resources/blob/main/docs/considerations.md#6-connection-sse-limit-on-http11)
 - `text/html` for the initial page load, then [`text/event-stream`](https://data-star.dev/essays/event_streams_all_the_way_down#the-solution) for subsequent responses
 - Why not WebSockets? : you can't use compression algorithms with WebSockets.
-
 ## Brotli
-
 - A lossless data compression algorithm.
 - Specifically created to compress HTTP stream.
 - Compressing a stream of data is better.

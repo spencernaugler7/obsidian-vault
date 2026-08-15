@@ -55,7 +55,7 @@ This SSE protocol uses the `text/event-stream` MIME type, just like HTML uses `t
 
 Where this idea becomes really powerful is when pairing it with `fetch` on the client which unlocks handling SSE responses (`text/event-stream`) from any kind of request (`GET`, `POST` etc) instead of only `GET` when using using `EventSource`.
 
-```
+```js
 // EventSource: Only GET requests
 new EventSource("/some-resource");
 
@@ -84,7 +84,7 @@ When using `text/html` I have to handle an all-or-nothing response and sequentia
 All code examples will assume using Datastar and "fat morph" approach where you send the whole page and let Datastar efficiently update the DOM.
 ```
 
-```
+```js
 // text/html approach: Must wait for EVERYTHING to complete
 app.post('/contact', async (req, res) => {
   // Validate (wait...)
@@ -124,7 +124,7 @@ So even on success we're waiting for all of this to complete before sending a re
 
 How about error handling?
 
-```
+```js
 // text/html: Handling partial failures is complex
 app.post('/contact', async (req, res) => {
   try {
@@ -183,7 +183,7 @@ app.post('/contact', async (req, res) => {
 
 And validation?
 
-```
+```js
 // text/html: Need separate endpoints or client-side duplication
 app.post('/validate-email', async (req, res) => {
   const isValid = await checkEmailExists(req.body.email);
@@ -229,7 +229,7 @@ So we can see using `text/html` ends up being more complex because it forces bre
 
 So how does SSE help?
 
-```
+```js
 // text/event-stream: Send multiple page updates as processing happens
 app.post('/contact', async (req, res) => {
   res.setHeader('Content-Type', 'text/event-stream');
@@ -302,7 +302,7 @@ Now using SSE we can patch in updates granularly, immediately and quickly all in
 
 And error handling?
 
-```
+```js
 // text/event-stream: Each step can succeed or fail independently
 app.post('/contact', async (req, res) => {
   res.setHeader('Content-Type', 'text/event-stream');
@@ -411,7 +411,7 @@ No error/success states leaking in to your route handler. Just passing in curren
 
 And validation.
 
-```
+```js
 // text/event-stream: One endpoint handles both validation and submission
 app.post('/contact', async (req, res) => {
   res.setHeader('Content-Type', 'text/event-stream');
@@ -422,7 +422,7 @@ app.post('/contact', async (req, res) => {
     const body = html.match(/<body[^>]*>([\s\S]*)<\/body>/)[1];
     
     res.write('event: datastar-patch-elements\n');
-    res.write(\`data: ${body}\n\n\`);
+    res.write(`data: ${body}\n\n`);
   };
   
   const { email, message, validateOnly } = req.body;
