@@ -11,6 +11,9 @@ views:
     order:
       - file.name
       - description
+      - author
+      - file.tags
+      - published
     sort:
       - property: created
         direction: DESC

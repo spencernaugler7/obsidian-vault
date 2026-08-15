@@ -8,6 +8,8 @@ created: 2026-08-14
 description: Christian Ekrem's views on how software development has built to handle unnecessary things that don't have much value.
 tags:
   - clippings
+  - tech
+  - ai
 ---
 > Of all the monsters that fill the nightmares of our folklore, none terrify more than werewolves, because they transform unexpectedly from the familiar into horrors. For these, one seeks bullets of silver that can magically lay them to rest.
 

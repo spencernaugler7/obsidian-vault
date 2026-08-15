@@ -1,12 +1,13 @@
 ---
-title: "Why I’m Done Making Desktop Applications"
-source: "https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/"
+title: Why I’m Done Making Desktop Applications
+source: https://www.kalzumeus.com/2009/09/05/desktop-aps-versus-web-apps/
 author:
 published:
 created: 2026-08-15
 description:
 tags:
-  - "clippings"
+  - clippings
+  - tech
 ---
 Breaking up has always been difficult for me. I tend to fall in love with being in love, and continue a relationship well past the point of futility. And so it is with my oldest love, writing desktop software.
 

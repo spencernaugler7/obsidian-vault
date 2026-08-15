@@ -2,6 +2,9 @@
 source: https://github.com/Huangphoux/the_datastar_way/blob/main/README.md
 verified: 2026-08-14
 author: "[Huangphoux](https://github.com/Huangphoux/)"
+tags:
+  - hypermedia
+  - tech
 ---
 The ideal way of using Datastar to build [real-time](https://example.andersmurphy.com/), [collaborative](https://checkboxes.andersmurphy.com/) web apps, as well as simple websites using this [mental model](https://yagni.club/3m475dwkjvc2o), without losing any [performance](https://andersmurphy.com/2025/04/07/clojure-realtime-collaborative-web-apps-without-clojurescript.html).
 

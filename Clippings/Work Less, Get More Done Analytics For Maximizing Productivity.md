@@ -1,12 +1,14 @@
 ---
 title: "Work Less, Get More Done: Analytics For Maximizing Productivity"
-source: "https://www.kalzumeus.com/2009/10/04/work-smarter-not-harder/"
+source: https://www.kalzumeus.com/2009/10/04/work-smarter-not-harder/
 author:
 published:
 created: 2026-08-15
 description:
 tags:
-  - "clippings"
+  - clippings
+  - career
+  - productivity
 ---
 For three years now I’ve been running a small software business in my spare time. It has been a very educational experience, especially in showing me that many things we think we know about software, programming, business, and the like are *wrong*. This is a bit of a shock, especially for well-worn chestnuts which have intuitive appeal, which we have come to invest with moral significance, and (most importantly, because we all think we’re smart) we’ve believe so self-evidently true as to make investigation a waste of time.
 
