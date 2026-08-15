@@ -13,12 +13,8 @@ ___
 - use asp.net core
 - use sqlite
 - use datastar
-- make a rest endpoint
 ### Questions
-- how do I use frontend libraries with datastar. For example tabulator
-	- can I have tabulator read from a datastar signal?
 - how should I handle authentication/autorization
-
 ___
 ## My own custom Speed reading application.
 
