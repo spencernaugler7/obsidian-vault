@@ -2,7 +2,7 @@
 - assign commands to emacs like key chords.
 - create a tui that displays the keyboard.
 - should look like
-- prepopulate the tui with existing commands not created in config.
+- pre-populate the tui with existing commands not created in config.
 
 ### Questions
 - should I build it like zellij/tmux/screen, create a ui shell to host the actual keyboard runner.
