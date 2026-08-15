@@ -4,9 +4,13 @@ views:
     filters:
       and:
         - file.inFolder("Clippings")
+        - file.ext == "md"
     groupBy:
       property: created
       direction: DESC
+    sort:
+      - property: created
+        direction: DESC
   - type: table
     name: View
     filters:
