@@ -1,12 +1,14 @@
 ---
-title: "ui = fn(state) done right"
-source: "https://yagni.club/3m3anpetejc23"
+title: ui = fn(state) done right
+source: https://yagni.club/3m3anpetejc23
 author:
 published: 2025-10-14
 created: 2026-08-15
-description: "If \"ui = fn(state)\" has ever resonated with you as a frontend developer you owe it to yourself to consider we as an industry have been going about it all wrong for years.Likely your state already lives on the backend and by syncing it to the frontend to render UI we're adding measurable amounts of unnecessary complexity. If you're to radically simplify if you development environments and production deployments then read on…"
+description: If "ui = fn(state)" has ever resonated with you as a frontend developer you owe it to yourself to consider we as an industry have been going about it all wrong for years.Likely your state already lives on the backend and by syncing it to the frontend to render UI we're adding measurable amounts of unnecessary complexity. If you're to radically simplify if you development environments and production deployments then read on…
 tags:
-  - "clippings"
+  - tech
+  - hypermedia
+  - web
 ---
 If "ui = fn(state)" has ever resonated with you as a frontend developer you owe it to yourself to consider we as an industry have been going about it all wrong for years. Likely your state already lives on the backend and by syncing it to the frontend to render UI we're adding measurable amounts of unnecessary complexity. If you're to radically simplify if you development environments and production deployments then read on…
 
@@ -162,7 +164,7 @@ app.get("/", async (c) => {
           const htmlString = (<Body count={counter} />).toString();
           await stream.writeSSE({
             event: "datastar-patch-elements",
-            data: \`selector body\nelements ${htmlString}\`,
+            data: `selector body\nelements ${htmlString}`,
           });
         }
       } catch (err: any) {
@@ -188,7 +190,7 @@ export default {
 };
 ```
 
-[GitHub - derekr/ui-fn-state-done-right: Bun app showcasing simple ui = fn(state) idea using Datastar](https://github.com/derekr/ui-fn-state-done-right)
+[Bun app showcasing simple ui = fn(state) idea using Datastar](https://github.com/derekr/ui-fn-state-done-right)
 
 This is the whole app. No backend or frontend monorepo splitting. No frontend or backend bundling/splitting. This is with Bun+Hono, but can be done w/ node (tsx), deno and other JS runtimes. There's an optional Datastar [TypeScript SDK](https://github.com/starfederation/datastar-typescript) for working with SSE as well if your needs are more complex than this.
 
