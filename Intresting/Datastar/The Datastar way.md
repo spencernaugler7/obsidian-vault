@@ -7,10 +7,9 @@ tags:
   - tech
   - datastar
 ---
-The ideal way of using Datastar to build [real-time](https://example.andersmurphy.com/), [collaborative](https://checkboxes.andersmurphy.com/) web apps, as well as simple websites using this [mental model](https://yagni.club/3m475dwkjvc2o), without losing any [performance](https://andersmurphy.com/2025/04/07/clojure-realtime-collaborative-web-apps-without-clojurescript.html).
+The ideal way of using Datastar to build [real-time](https://example.andersmurphy.com/), [collaborative](https://checkboxes.andersmurphy.com/) web apps, as well as simple websites using this [[SSE Mental Model | mental model]], without losing any [performance](https://andersmurphy.com/2025/04/07/clojure-realtime-collaborative-web-apps-without-clojurescript.html).
 
-> [!note]
->All linked sources are of my own picking. I don't get paid to write any of this.
+> [!note]- All linked sources are of my own picking. I don't get paid to write any of this.
 >If you're productive with React or htmx, keep using it.
 >Architectural decisions in a team is [sociological](https://htmx.org/essays/when-to-use-hypermedia/#if-your-team-is-not-on-board).
 >[Think twice](https://jsx.lol/) before deciding on React.
@@ -32,7 +31,7 @@ The ideal way of using Datastar to build [real-time](https://example.andersmurph
 3.  **SSE**: open an long-lived connection to stream reponses to the client.
 4.  **Brotli**: compress the whole stream with tunable memory.
 
-Without much adjustments (differentiating users by [session IDs](https://gist.github.com/axelknock/77d44d12bd84db6b4c8aabf7aad3d15a)), by doing this way, [multiplayer](notes.md#multiplayer) is the default behavior.
+Without much adjustments (differentiating users by [session IDs](https://gist.github.com/axelknock/77d44d12bd84db6b4c8aabf7aad3d15a)), by doing this way, [multiplayer](https://github.com/Huangphoux/the_datastar_way/blob/main/notes.md) is the default behavior.
 
 ## data-on: the only [attribute](https://data-star.dev/reference/attributes) that you would need
 
