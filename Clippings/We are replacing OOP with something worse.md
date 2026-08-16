@@ -31,7 +31,7 @@ Nowadays, we have a myriad of terms for these concepts, and others which followe
 
 ## Programs-as-classes
 
-At around the same time, some bright spark realised that programmers - a population of people not known for good hygiene - might also not produce the most hygienic of programs, and that it was perhaps important not to trust all of the little doo-dahs that ran on your computer. And so the process *boundary* was born, and operating systems morphed from friendly personal assistants with the goal of doing the dirty work of programs into childminders, whose work mainly consisted of ensuring that those within their care did not accidentally feed one-another snails or paperclips.
+At around the same time, some bright spark realized that programmers - a population of people not known for good hygiene - might also not produce the most hygienic of programs, and that it was perhaps important not to trust all of the little doo-dahs that ran on your computer. And so the process *boundary* was born, and operating systems morphed from friendly personal assistants with the goal of doing the dirty work of programs into childminders, whose work mainly consisted of ensuring that those within their care did not accidentally feed one-another snails or paperclips.
 
 In tandem, other bright sparks were discovering that computers could be made to talk to one-another, and that perhaps this might be useful. Now, programs written by people that didn’t even know one-another - let alone trust one-another - could start interacting.
 
