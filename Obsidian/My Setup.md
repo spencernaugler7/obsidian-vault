@@ -1,5 +1,4 @@
 ## Install Plugins
-- [editing toolbar](obsidian://show-plugin?id=editing-toolbar)
 - [git](obsidian://show-plugin?id=obsidian-git)
 - [excalidraw](obsidian://show-plugin?id=obsidian-excalidraw-plugin)
 - [d2](obsidian://show-plugin?id=d2-obsidian)
@@ -10,6 +9,7 @@
 - [file include](obsidian://show-plugin?id=file-include)
 - [auto split](obsidian://show-plugin?id=obsidian-auto-split)
 - [inline properties](obsidian://show-plugin?id=inline-properties)
+- [zen mode](obsidian://show-plugin?id=obsidian-prozen)
 
 ## Maybe use these plugins?
 - [obsidian tasks](obsidian://show-plugin?id=obsidian-tasks-plugin)
