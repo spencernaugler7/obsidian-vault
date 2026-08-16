@@ -9,6 +9,7 @@
 - [tab settings](obsidian://show-plugin?id=open-tab-settings)
 - [file include](obsidian://show-plugin?id=file-include)
 - [auto split](obsidian://show-plugin?id=obsidian-auto-split)
+- [inline properties](obsidian://show-plugin?id=inline-properties)
 
 ## Maybe use these plugins?
 - [obsidian tasks](obsidian://show-plugin?id=obsidian-tasks-plugin)
