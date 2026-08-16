@@ -9,6 +9,7 @@ tags:
   - tech
   - hypermedia
   - web
+  - clippings
 ---
 If "ui = fn(state)" has ever resonated with you as a frontend developer you owe it to yourself to consider we as an industry have been going about it all wrong for years. Likely your state already lives on the backend and by syncing it to the frontend to render UI we're adding measurable amounts of unnecessary complexity. If you're to radically simplify if you development environments and production deployments then read on…
 

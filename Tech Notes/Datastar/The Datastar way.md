@@ -6,6 +6,7 @@ tags:
   - hypermedia
   - tech
   - datastar
+  - clippings
 ---
 The ideal way of using Datastar to build [real-time](https://example.andersmurphy.com/), [collaborative](https://checkboxes.andersmurphy.com/) web apps, as well as simple websites using this [[SSE Mental Model | mental model]], without losing any [performance](https://andersmurphy.com/2025/04/07/clojure-realtime-collaborative-web-apps-without-clojurescript.html).
 
