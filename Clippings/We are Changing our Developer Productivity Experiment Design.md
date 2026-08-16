@@ -1,12 +1,15 @@
 ---
-title: "We are Changing our Developer Productivity Experiment Design"
-source: "https://metr.org/blog/2026-02-24-uplift-update/#wider-adoption-of-ai-has-made-it-more-difficult-to-measure-task-level-productivity"
+title: We are Changing our Developer Productivity Experiment Design
+source: https://metr.org/blog/2026-02-24-uplift-update/#wider-adoption-of-ai-has-made-it-more-difficult-to-measure-task-level-productivity
 author:
 published: 2026-02-24
 created: 2026-08-14
-description: "Our second developer productivity study faces selection effects from wider AI adoption, prompting us to redesign our approach."
+description: Our second developer productivity study faces selection effects from wider AI adoption, prompting us to redesign our approach.
 tags:
-  - "clippings"
+  - clippings
+  - ai
+  - programming
+  - productivity
 ---
 METR previously published a [paper](https://arxiv.org/pdf/2507.09089) which found the use of AI tools caused a 20% slowdown in completing tasks among experienced open-source developers, using data from February to June 2025.
 
