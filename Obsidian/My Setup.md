@@ -4,7 +4,7 @@
 - [excalidraw](obsidian://show-plugin?id=obsidian-excalidraw-plugin)
 - [d2](obsidian://show-plugin?id=d2-obsidian)
 - [open in terminal](obsidian://show-plugin?id=open-in-terminal)
-- [calandar](obsidian://show-plugin?id=calendar)
+- [calendar](obsidian://show-plugin?id=calendar)
 - [embed file](obsidian://show-plugin?id=file-include)
 - [tab settings](obsidian://show-plugin?id=open-tab-settings)
 - [file include](obsidian://show-plugin?id=file-include)
