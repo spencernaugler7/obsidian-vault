@@ -202,6 +202,16 @@ Aliases: caution, attention
 
 Aliases: help, faq
 
+### Example
+
+```markdown
+> [!example]
+> Content here
+```
+
+> [!example]
+> Content here
+
 ### Collapsible
 
 ```markdown
