@@ -33,16 +33,25 @@ ___
   - [Csharp lib](https://github.com/salvadordf/WebUI4CSharp)
 ___
 ## File include obsidian plugin
-Want to use this to edit config files from multiple sources from one easy place obsidian.
+Want to use this to edit config files from multiple sources from one easy place: obsidian.
 
 - Make an obsidian plugin that can embed a file in a markdown note from any directory on the filesystem. 
 - We can also signify a line number range or several ranges to embed the file. 
 - We can also edit this file directly from the markdown note.
 ___
-## Git source obsidian plugin.
-Want to create an obsidian plugin that can pull a markdown file from some git repo. 
-this file is then downloaded and automatically updates from the source with a command. uses the "source" frontmatter tag to descied the location to pull form.
+## Note auto population from source obsidian plugin.
+Want to create an obsidian plugin. This plugin reads a  "source" frontmatter tag. the plugin then downloads the raw version of the source. Depending on the current contents of the note the plugin can do a copule things
+1. Empty note: simply dump the raw contents into the note.
+2. Note already has content? If the content in the note is the same as the pulled content do nothing. If the contents are different open a merge edit and resolve conflicts.
+Plans for features.
+- Initially just work with git repositories.
+- Expand functionality to handle user edits with some kind of merge editor.
+___
+# Expand/Collapse all headings Obsidian plugin.
+Add the ability to expand/collapse all headers in the current note.
+Ways to run
+1. command pallet item to expand/collapse all
+2. right click in note option
 
-- git url is specified in frontmatter. I run one command and it pulls the latest version of that file from repo and inserts the contents into the note. If contents already exist it updates the existing
-- perhaps implement with git submodules?
-- expand functionality to handle user edits with some kind of merge editor.
+More features
+1. add option to automatically collapse all headers when first opening a note.
