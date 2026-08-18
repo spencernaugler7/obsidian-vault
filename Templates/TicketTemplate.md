@@ -1,6 +1,7 @@
 ---
-summary: 
+summary:
 created: {{date}}
+source:
 ---
 
 ## Description
