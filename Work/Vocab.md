@@ -11,6 +11,7 @@
 - Service Item = 
 - LSP = Voyce: Language service provider (intpreter)
 	- any company that offers interpretation services.
+	- Called `Agent` in Martti platform.
 ## Jira
 
 - EUE = End User Experience

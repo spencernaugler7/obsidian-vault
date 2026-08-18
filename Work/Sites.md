@@ -1,0 +1,3 @@
+- [https://voyce-gateway-api.qa.cloudbreak.us/docs#/](https://voyce-gateway-api.qa.cloudbreak.us/docs#/ "https://voyce-gateway-api.qa.cloudbreak.us/docs#/")  
+- [https://www.voyceglobal.com/api{location}](https://www.voyceglobal.com/apioutsource "https://www.voyceglobal.com/")
+	- [https://www.voyceglobal.com/apioutsource](https://www.voyceglobal.com/apioutsource "https://www.voyceglobal.com/apioutsource")
