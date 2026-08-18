@@ -4,4 +4,4 @@
 - [Nushell](https://www.nushell.sh/)
 - [Yolk](https://elkowar.github.io/yolk/)
 - [rust desk](https://rustdesk.com/docs/en/)
-- [native sdk](https://native-sdk.dev/)
+- [HyperView](https://hyperview.org/)
