@@ -1,4 +1,10 @@
 
+First Keep screen on when usb is connected. ^[source: [adb link](https://varunbarad.com/blog/keep-android-screen-on-when-usb-connected)]
+
+```bash
+adb shell svc power stayon usb
+```
+
 Basic Usage
 
 ```bash

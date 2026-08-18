@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Work/Tickets")
+        - file.ext == "md"
+    groupBy:
+      property: created
+      direction: DESC
+    order:
+      - file.name
+      - summary
+    columnSize:
+      file.name: 154
