@@ -6,3 +6,4 @@
 - [rust desk](https://rustdesk.com/docs/en/)
 - [HyperView](https://hyperview.org/)
 - [RecEnroll](https://reqnroll.net/) bdd test framework.
+- [hister](https://hister.org/) personal search engine.
