@@ -1,4 +1,4 @@
-# Translation request process.
+# Outsource request process.
 1. Voyce -> Martti   VoyceGateway v1/outsource
 2. Martti -> Voyce   `v1/outsource/accept`  
 3. Martti -> Voyce   `v1/outsource/finish` 
