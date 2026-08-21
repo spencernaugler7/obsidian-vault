@@ -1,13 +1,15 @@
 ---
-title: "HTML Can Do That"
-source: "https://chrisburnell.com/html-can-do-that/"
+title: HTML Can Do That
+source: https://chrisburnell.com/html-can-do-that/
 author:
   - "[[Chris Burnell]]"
 published: 2026-08-08
 created: 2026-08-19
-description: "HTML has been gobbling up swathes of what used to be JavaScript’s remit. This page lists a bunch of dynamic functionality that we can now achieve with just HTML."
+description: HTML has been gobbling up swathes of what used to be JavaScript’s remit. This page lists a bunch of dynamic functionality that we can now achieve with just HTML.
 tags:
-  - "clippings"
+  - clippings
+  - web
+  - html
 ---
 HTML has been gobbling up swathes of what used to be JavaScript’s remit. This page lists a bunch of dynamic functionality that we can now achieve with just HTML.
 
@@ -69,7 +71,6 @@ Same deal as the \<dialog> above: no JS, just HTML attributes!
 ```
 
 ---
-
 ## Grouped \<details>
 
 Available since September 2025
@@ -86,14 +87,6 @@ Available since September 2025
 - WebView Android 120+
 
 A shared `name` attribute turns a group of `<details>` into an exclusive accordion. Open one and the others close automatically. Magic!
-
-First
-
-Open the seond one and watch this close on its own.
-
-Second
-
-First one’s hidden now.
 
 ```html
 <details name="example-group">
