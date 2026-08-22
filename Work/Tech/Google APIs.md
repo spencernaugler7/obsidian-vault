@@ -1,8 +1,8 @@
-### **What is google fci?**
-	- Firebase Cloud Message api.
-	- [docs](https://firebase.google.com/docs/reference/fcm/rest)
-	- [client libs](https://docs.cloud.google.com/apis/docs/client-libraries-explained)
-	- [ap reference](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages)
+### **What is google fcm?**
+Firebase Cloud Message api
+- [docs](https://firebase.google.com/docs/reference/fcm/rest)
+- [client libs](https://docs.cloud.google.com/apis/docs/client-libraries-explained)
+- [ap reference](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages)
 
 ```json
 {

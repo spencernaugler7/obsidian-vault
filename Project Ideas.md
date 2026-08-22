@@ -47,7 +47,7 @@ Plans for features.
 - Initially just work with git repositories.
 - Expand functionality to handle user edits with some kind of merge editor.
 ___
-# Expand/Collapse all headings Obsidian plugin.
+## Expand/Collapse all headings Obsidian plugin.
 Add the ability to expand/collapse all headers in the current note.
 Ways to run
 1. command pallet item to expand/collapse all
@@ -55,3 +55,17 @@ Ways to run
 
 More features
 1. add option to automatically collapse all headers when first opening a note.
+___
+## Interesting phrase thesaurus
+
+want a site where we list a common saying and we find intresting way to say the same thing. Urban dictionary for thesurusing.
+
+> [!Example]
+> `Not enough content` -> `Too little butter spread across to little bread`
+
+> [!Example]
+> [not enough to cover example](https://www.thesaurus.com/browse/not-enough-to-cover?q=not%20enough%20content&noredirect=true&mismatchType=misspelling)
+
+Planned features
+- There should be a mechanism that allows them to add a source where the quote
+- Users can add more phrases too say it.
