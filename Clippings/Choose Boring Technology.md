@@ -1,12 +1,13 @@
 ---
-title: "Choose Boring Technology"
-source: "https://mcfunley.com/choose-boring-technology"
+title: Choose Boring Technology
+source: https://mcfunley.com/choose-boring-technology
 author:
 published:
 created: 2026-08-14
 description:
 tags:
-  - "clippings"
+  - clippings
+  - tech
 ---
 Probably the single best thing to happen to me in my career was having had [Kellan](http://laughingmeme.org/) placed in charge of me. I stuck around long enough to see Kellan’s technical decisionmaking start to bear fruit. I learned a great deal *from* this, but I also learned a great deal as a *result* of this. I would not have been free to become the engineer that wrote [Data Driven Products Now!](https://mcfunley.com/data-driven-products-lean-startup-2014) if Kellan had not been there to so thoroughly stick the landing on technology choices.
 
