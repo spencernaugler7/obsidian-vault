@@ -28,7 +28,7 @@ When creating the outsource interaction:
 - Existing integrations remain backward compatible.
 # Questions
 1. What is voyces client id? None of the scripts I have insert it into that table.
-	1. You have to fetch it using a person id.
+	1. For Voyce client Id, create a new function based on person Id, to get `Voyce Client Id`, `Voyce Client Name`, `Voyce ClientUser Id`, `Voyce ClientUserName`, and then only use the client Id for now.
 ```sql
 select d.Id as VoyceClientId, 
 	d.ClientName as VoyceClientName, 
@@ -41,5 +41,5 @@ inner join WEYIMgr.dbo.Appuser c on
 inner join WEYIMgr.dbo.Client d on c.ClientId = d.Id  
 where a.Id = @pPersonId
 ```
-1. Why do we 
-2. Why do we default to ASL?
+
+1. Why do we default to ASL?
