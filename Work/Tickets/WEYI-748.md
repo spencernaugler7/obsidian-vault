@@ -4,9 +4,19 @@ summary: Add language id and client id to the outsource request, defaulted to AS
 source: https://cloudbreak.atlassian.net/browse/WEYI-748?referrer=quick-find&search_id=98cc1de2-cb55-4fcf-a63c-00c99cf02d01
 ---
 # Description
-Enhance the Outsource API request model to include `LanguageId` and `ClientId` fields. These fields should be automatically populated with default values to ensure all outsource interactions are associated with the correct language and client.
+Enhance the Outsource API request model to include LanguageId and ClientId fields. These fields should be automatically populated with default values to ensure all outsource interactions are associated with the correct language and client.
 
+# Background
+
+Currently, outsource requests do not explicitly include the language or client information. To support future extensibility and ensure interactions are created with the correct context, the request payload should include these values.
+
+For the initial implementation:
+- LanguageId should default to **ASL**.
+- ClientId should default to **Voyce's client ID**.
+
+These defaults allow the existing workflow to remain unchanged while making the API more flexible for future enhancements.
 # Requirements
+
 #### 1. Update Outsource Request Model
 Add the following fields to the outsource request:
 - LanguageId
@@ -17,7 +27,7 @@ If these fields are not provided by the caller:
 - ClientId defaults to **Voyce's client ID**.
 #### 3. Interaction Creation
 When creating the outsource interaction:
-- Use the resolved `LanguageId` and `ClientId`.
+- Use the resolved LanguageId and ClientId.
 - Persist these values with the interaction so downstream services use the correct context.
 # Acceptance Criteria
 - The Outsource API request supports LanguageId and ClientId.
