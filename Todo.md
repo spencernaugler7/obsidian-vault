@@ -1,0 +1,3 @@
+- [ ] Call gas company and cancel➕ 2026-08-29 📅 2026-08-31
+- [ ] Pay utility bill.📅 2026-08-31 ➕ 2026-08-29 
+- [ ] Figure out which stuff to haul down 📅 2026-08-30 

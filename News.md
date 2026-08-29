@@ -1,0 +1,4 @@
+- [Hacker News](https://www.hackernewz.com/)
+- [Blogosphere](https://text.blogosphere.app/)
+- [Lobsters](https://lobste.rs/)
+- [g board](https://boards.4chan.org/g/)
