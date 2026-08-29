@@ -1,4 +1,4 @@
 remove all orphaned packages
 ```bash
-sudo pacman -Qqd | sudo pacman -Rsu --print -
+pacman -Qtdq | pacman -Rns -
 ```
