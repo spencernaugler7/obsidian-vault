@@ -1,3 +1,7 @@
+## To Watch
+- Hereditary
+
+## Watched
 - Oculus
 - Knives Out
 - Blazzing Saddles
