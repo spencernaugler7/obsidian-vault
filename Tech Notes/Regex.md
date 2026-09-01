@@ -12,28 +12,25 @@
 | \D        | One character that is not a _digit_ as defined by your engine's _\d_                     | \D\D\D     | ABC          |
 | \W        | One character that is not a _word character_ as defined by your engine's _\w_            | \W\W\W\W\W | *-+=)        |
 | \S        | One character that is not a _whitespace character_ as defined by your engine's _\s_      | \S\S\S\S   | Yoyo         |
-
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#quantifiers)  
 ## Quantifiers
 
-|Quantifier|Legend|Example|Sample Match|
-|---|---|---|---|
-|+|One or more|Version \w-\w+|Version A-b1_1|
-|{3}|Exactly three times|\D{3}|ABC|
-|{2,4}|Two to four times|\d{2,4}|156|
-|{3,}|Three or more times|\w{3,}|regex_tutorial|
-|*|Zero or more times|A*B*C*|AAACC|
-|?|Once or none|plurals?|plural|
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#morechars)  
+| Quantifier | Legend              | Example        | Sample Match   |
+| ---------- | ------------------- | -------------- | -------------- |
+| +          | One or more         | Version \w-\w+ | Version A-b1_1 |
+| {3}        | Exactly three times | \D{3}          | ABC            |
+| {2,4}      | Two to four times   | \d{2,4}        | 156            |
+| {3,}       | Three or more times | \w{3,}         | regex_tutorial |
+| *          | Zero or more times  | A*B*C*         | AAACC          |
+| ?          | Once or none        | plurals?       | plural         |
 ## More Characters
 
-|Character|Legend|Example|Sample Match|
-|---|---|---|---|
-|**.**|Any character except line break|a.c|abc|
-|**.**|Any character except line break|.*|whatever, man.|
-|\**.**|A period (special character: needs to be escaped by a \)|a\.c|a.c|
-|\|Escapes a special character|\.\*\+\?    \$\^\/\\|.*+?    $^/\|
-|\|Escapes a special character|\[\{\(\)\}\]|[{()}]|
+| Character                     | Legend                                                   | Example       | Sample Match   |
+| ----------------------------- | -------------------------------------------------------- | ------------- | -------------- |
+| **.**                         | Any character except line break                          | a.c           | abc            |
+| **.**                         | Any character except line break                          | .*            | whatever, man. |
+| \**.**                        | A period (special character: needs to be escaped by a \) | a\.c          | a.c            |
+| \|Escapes a special character | \.\*\+\?    \$\^\/\\                                     | .*+?    $^/\| |                |
+| \|Escapes a special character | \[\{\(\)\}\]                                             | [{()}]        |                |
 [(direct link)](https://www.rexegg.com/regex-quickstart.php#logic)  
 ## Logic
 
@@ -44,7 +41,6 @@
 | \1      | Contents of Group 1      | r(\w)g\1x             | regex                   |
 | \2      | Contents of Group 2      | (\d\d)\+(\d\d)=\2\+\1 | 12+65=65+12             |
 | (?: … ) | Non-capturing group      | A(?:nt\|pple)         | Apple                   |
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#whitespace)  
 ## More White-Space
 
 | Character | Legend                                                                                                                                             | Example   | Sample Match |
@@ -60,7 +56,6 @@
 | \v        | Perl, PCRE (C, PHP, R…), Java: one vertical whitespace character: line feed, carriage return, vertical tab, form feed, paragraph or line separator |           |              |
 | \V        | Perl, PCRE (C, PHP, R…), Java: any character that is not a vertical whitespace                                                                     |           |              |
 | \R        | Perl, PCRE (C, PHP, R…), Java: one line break (carriage return + line feed pair, and all the characters matched by \v)                             |           |              |
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#morequants)  
 ## More Quantifiers
 
 | Quantifier | Legend                           | Example  | Sample Match   |
@@ -71,7 +66,6 @@
 | ?          | Makes quantifiers "lazy"         | A*?      | empty in AAA   |
 | {2,4}      | Two to four times, "greedy"      | \w{2,4}  | abcd           |
 | ?          | Makes quantifiers "lazy"         | \w{2,4}? | ab in **ab**cd |
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#classes)  
 ## Character Classes
 
 | Character | Legend                                                                      | Example        | Sample Match                                                                                           |
@@ -86,7 +80,6 @@
 | [^x-y]    | One of the characters **not** in the range from x to y                      | [^ -~]+        | Characters that are **not** in the printable section of the [ASCII table](http://www.asciitable.com/). |
 | [\d\D]    | One character that is a digit or a non-digit                                | [\d\D]+        | Any characters, inc-  <br>luding new lines, which the regular dot doesn't match                        |
 | [\x41]    | Matches the character at hexadecimal position 41 in the ASCII table, i.e. A | [\x41-\x45]{3} | ABE                                                                                                    |
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#anchors)  
 ## [Anchors](https://www.rexegg.com/regex-anchors.html) and [Boundaries](https://www.rexegg.com/regex-boundaries.html)
 
 |Anchor|Legend|Example|Sample Match|
@@ -100,7 +93,6 @@
 |\b|[Word boundary](https://www.rexegg.com/regex-boundaries.html#wordboundary)  <br>Most engines: position where one side only is an ASCII letter, digit or underscore|Bob.*\bcat\b|Bob ate the cat|
 |\b|[Word boundary](https://www.rexegg.com/regex-boundaries.html#wordboundary)  <br>.NET, Java, Python 3, Ruby: position where one side only is a Unicode letter, digit or underscore|Bob.*\b\кошка\b|Bob ate the кошка|
 |\B|[Not a word boundary](https://www.rexegg.com/regex-boundaries.html#notb)|c.*\Bcat\B.*|copycats|
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#posix)  
 ## POSIX Classes
 
 | Character | Legend                                                  | Example         | Sample Match |
@@ -111,7 +103,6 @@
 | [:alnum:] | Ruby 2: Unicode digit, letter or ideogram               | [[:alnum:]]{10} | кошка90210   |
 | [:punct:] | PCRE (C, PHP, R…): ASCII punctuation mark               | [[:punct:]]+    | ?!.,:;       |
 | [:punct:] | Ruby: Unicode punctuation mark                          | [[:punct:]]+    | ‽,:〽⁆        |
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#modifiers)  
 ## [Inline Modifiers](https://www.rexegg.com/regex-modifiers.html)
 None of these are supported in JavaScript. In Ruby, beware of (?s) and (?m).  
 
@@ -134,7 +125,6 @@ None of these are supported in JavaScript. In Ruby, beware of (?s) and (?m).
 |(?<=…)|[Positive lookbehind](https://www.rexegg.com/regex-disambiguation.html#lookbehind)|(?<=\d)cat|cat in 1**cat**|
 |(?!…)|[Negative lookahead](https://www.rexegg.com/regex-disambiguation.html#negative-lookahead)|(?!theatre)the\w+|theme|
 |(?<!…)|[Negative lookbehind](https://www.rexegg.com/regex-disambiguation.html#negative-lookbehind)|\w{3}(?<!mon)ster|Munster|
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#classoperations)  
 ## [Character Class Operations](https://www.rexegg.com/regex-class-operations.html)
 
 | Class Operation | Legend                                                                                                            | Example                       | Sample Match                                                       |
@@ -145,7 +135,6 @@ None of these are supported in JavaScript. In Ruby, beware of (?s) and (?m).
 | […&&[…]]        | Java, Ruby 2+: character class intersection.                                                                      | [\S&&[\D]&&[^a-zA-Z]]         | An non-whitespace character that a non-digit and not a letter.     |
 | […&&[^…]]       | Java, Ruby 2+: character class subtraction is obtained by intersecting a class with a negated class               | [a-z&&[^aeiou]]               | An English lowercase letter that is not a vowel.                   |
 | […&&[^…]]       | Java, Ruby 2+: character class subtraction                                                                        | [\p{InArabic}&&[^\p{L}\p{N}]] | An Arabic character that is not a letter or a number               |
-[(direct link)](https://www.rexegg.com/regex-quickstart.php#other)  
 ## Other Syntax
 
 |Syntax|Legend|Example|Sample Match|
