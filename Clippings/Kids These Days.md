@@ -78,7 +78,9 @@ And what do we find from these studies? [One review of this literature](https://
 
 Many psychologists take these findings (or rather, the lack of findings) to mean that social media has no negative effects. Many of them are upset with Haidt for manufacturing a crisis with what they see as little or no empirical support.
 
-I am not one of these critics. I think it’s entirely plausible that screens have a real negative effect on teenagers, but studies can’t find them because (a) the effects need not be dose-dependent (maybe two hours on your phone isn’t worse than one hour), and (b) given that everyone else is on social media, giving it up can have a negative effect. To expand on the second point, it’s possible that teenagers would be better off if social media didn’t exist, but, given that all of their peers have adopted it, there is a serious social cost to opting out.
+I am not one of these critics. I think it’s entirely plausible that screens have a real negative effect on teenagers, but studies can’t find them because 
+- (a) the effects need not be dose-dependent (maybe two hours on your phone isn’t worse than one hour)
+- (b) given that everyone else is on social media, giving it up can have a negative effect. To expand on the second point, it’s possible that teenagers would be better off if social media didn’t exist, but, given that all of their peers have adopted it, there is a serious social cost to opting out.
 
 If so, this means that the psychological research could all come up empty, but Haidt could still be right: correlational studies comparing light users to heavy users are comparing harmed kids to harmed kids, and deactivation experiments are uninformative—quitting doesn’t restore the pre-smartphone social world; it just turns the kid into a hermit.
 
