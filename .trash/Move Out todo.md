@@ -1,0 +1,18 @@
+- [x] find dealer toyota or ford
+- [x] find some vehicles of intrest (toyota tacoma, or ford ranger)
+- [x] clean up house
+	- [ ] get works for toilet
+- [x] disassemble drums
+- [x] get containers for moving.
+- [x] clean up closet and remove clothes I don't want.
+- [x] get new shoes, vivo barefoots, hookas, watershoe type stuff
+
+- [x] Toilet paper
+- [x] The Works toilet bowl cleaner
+- [x] Trash bags
+- [x] Drain snake
+- [x] spinnach
+- [x] fruit
+- [x] hokas
+- [x] toothbrush tips
+- [x] macbook charger.
