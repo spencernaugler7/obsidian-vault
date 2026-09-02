@@ -1,6 +1,9 @@
 ## To Watch
 - Hereditary
 
+## Watching
+Edgerunners: [ep 3](https://aniwaves.ru/watch/cyberpunk-edgerunners-80125/ep-3)
+
 ## Watched
 - Oculus
 - Knives Out
