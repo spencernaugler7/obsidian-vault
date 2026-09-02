@@ -10,6 +10,7 @@
 - [auto split](obsidian://show-plugin?id=obsidian-auto-split)
 - [inline properties](obsidian://show-plugin?id=inline-properties)
 - [zen mode](obsidian://show-plugin?id=obsidian-prozen)
+- [obsidian tasks](obsidian://show-plugin?id=obsidian-tasks-plugin)
 
 ## Maybe use these plugins?
 - [obsidian tasks](obsidian://show-plugin?id=obsidian-tasks-plugin)
