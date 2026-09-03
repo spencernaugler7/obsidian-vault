@@ -52,4 +52,22 @@ inner join WEYIMgr.dbo.Client d on c.ClientId = d.Id
 where a.Id = @pPersonId
 ```
 
-1. Why do we default to ASL?
+main data
+1. outsourceid
+2. languageid
+3. clientId
+4. interpreterFirstName
+5. interpreterLastName
+6. interpeterId
+7. requestId
+
+
+8. Why do we default to ASL?
+9. Exactly what record needs to be updated and persisted with the provided ClientId field?
+	1. I imagine it is records on the ProviderLanguage table.
+	2. Maybe serviceitemmaster?
+10. Exactly what record needs to be updated and persisted with the provided LanguageId field?
+	1. maybe ProviderService?
+	2. maybe ProviderLanguage?
+	3. maybe PersonLanguage?
+11. What is the difference between the Client and Provider tables?

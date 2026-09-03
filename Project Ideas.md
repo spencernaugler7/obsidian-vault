@@ -69,3 +69,8 @@ want a site where we list a common saying and we find intresting way to say the 
 Planned features
 - There should be a mechanism that allows them to add a source where the quote
 - Users can add more phrases too say it.
+---
+Wordle game
+
+Use this api: https://www.wordsapi.com/
+Don't know which engine to use. 
