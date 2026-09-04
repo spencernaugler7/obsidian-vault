@@ -16,3 +16,4 @@ From puppers [list](https://gist.github.com/SleepWellPupper/c48c42031d0dcad0429b
 Random
 - [hypermedia book](https://hypermedia.systems/book/contents/)
 - [principa softwarica](https://principia-softwarica.org/)
+- [metapatterns](https://metapatterns.io/)
