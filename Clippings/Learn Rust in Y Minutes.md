@@ -34,9 +34,9 @@ Although Rust is a relatively low-level language, it has some functional concept
 /// Documentation comments look like this and support markdown notation.
 /// # Examples
 ///
-/// \`\`\`
+/// '''
 /// let five = 5
-/// \`\`\`
+/// '''
 
 ///////////////
 // 1. Basics //
@@ -44,7 +44,7 @@ Although Rust is a relatively low-level language, it has some functional concept
 
 #[allow(dead_code)]
 // Functions
-// \`i32\` is the type for 32-bit signed integers
+// 'i32' is the type for 32-bit signed integers
 fn add2(x: i32, y: i32) -> i32 {
     // Implicit return (no semicolon)
     x + y
@@ -89,8 +89,8 @@ fn main() {
     // Printing
     println!("{} {}", f, x); // 1.3 hello world!
 
-    // A \`String\` – a heap-allocated string
-    // Stored as a \`Vec<u8>\` and always holds a valid UTF-8 sequence, 
+    // A 'String' – a heap-allocated string
+    // Stored as a 'Vec<u8>' and always holds a valid UTF-8 sequence, 
     // which is not null terminated.
     let s: String = "hello world".to_string();
 
@@ -98,8 +98,8 @@ fn main() {
     // This is basically an immutable pointer and length of a string – it
     // doesn’t actually contain the contents of a string, just a pointer to
     // the beginning and a length of a string buffer,
-    // statically allocated or contained in another object (in this case, \`s\`).
-    // The string slice is like a view \`&[u8]\` into \`Vec<T>\`.
+    // statically allocated or contained in another object (in this case, 's').
+    // The string slice is like a view '&[u8]' into 'Vec<T>'.
     let s_slice: &str = &s;
 
     println!("{} {}", s, s_slice); // hello world hello world
@@ -117,7 +117,7 @@ fn main() {
     // This is much like a string slice, but for vectors
     let slice: &[i32] = &vector;
 
-    // Use \`{:?}\` to print something debug-style
+    // Use '{:?}' to print something debug-style
     println!("{:?} {:?}", vector, slice); // [1, 2, 3, 4, 5] [1, 2, 3, 4, 5]
 
     // Tuples //
@@ -125,7 +125,7 @@ fn main() {
     // A tuple is a fixed-size set of values of possibly different types
     let x: (i32, &str, f64) = (1, "hello", 3.4);
 
-    // Destructuring \`let\`
+    // Destructuring 'let'
     let (a, b, c) = x;
     println!("{} {} {}", a, b, c); // 1 hello 3.4
 
@@ -161,7 +161,7 @@ fn main() {
 
     // Enum with fields
     // If you want to make something optional, the standard
-    // library has \`Option\`
+    // library has 'Option'
     enum OptionalI32 {
         AnI32(i32),
         Nothing,
@@ -174,8 +174,8 @@ fn main() {
 
     struct Foo<T> { bar: T }
 
-    // This is defined in the standard library as \`Option\`
-    // \`Option\` is used in place of where a null pointer
+    // This is defined in the standard library as 'Option'
+    // 'Option' is used in place of where a null pointer
     // would normally be used.
     enum Optional<T> {
         SomeVal(T),
@@ -185,7 +185,7 @@ fn main() {
     // Methods //
 
     impl<T> Foo<T> {
-        // Methods take an explicit \`self\` parameter
+        // Methods take an explicit 'self' parameter
         fn bar(&self) -> &T { // self is borrowed
             &self.bar
         }
@@ -259,7 +259,7 @@ fn main() {
     // 4. Control flow //
     /////////////////////
 
-    // \`for\` loops/iteration
+    // 'for' loops/iteration
     let array = [1, 2, 3];
     for i in array {
         println!("{}", i);
@@ -270,23 +270,23 @@ fn main() {
         print!("{} ", i);
     }
     println!("");
-    // prints \`0 1 2 3 4 5 6 7 8 9 \`
+    // prints '0 1 2 3 4 5 6 7 8 9 '
 
-    // \`if\`
+    // 'if'
     if 1 == 1 {
         println!("Maths is working!");
     } else {
         println!("Oh no...");
     }
 
-    // \`if\` as expression
+    // 'if' as expression
     let value = if true {
         "good"
     } else {
         "bad"
     };
 
-    // \`while\` loop
+    // 'while' loop
     while 1 == 1 {
         println!("The universe is operating normally.");
         // break statement gets out of the while loop.
@@ -306,15 +306,15 @@ fn main() {
     /////////////////////////////////
 
     // Owned pointer – only one thing can ‘own’ this pointer at a time
-    // This means that when the \`Box\` leaves its scope, it will be automatically deallocated safely.
+    // This means that when the 'Box' leaves its scope, it will be automatically deallocated safely.
     let mut mine: Box<i32> = Box::new(3);
     *mine = 5; // dereference
-    // Here, \`now_its_mine\` takes ownership of \`mine\`. In other words, \`mine\` is moved.
+    // Here, 'now_its_mine' takes ownership of 'mine'. In other words, 'mine' is moved.
     let mut now_its_mine = mine;
     *now_its_mine += 2;
 
     println!("{}", now_its_mine); // 7
-    // println!("{}", mine); // this would not compile because \`now_its_mine\` now owns the pointer
+    // println!("{}", mine); // this would not compile because 'now_its_mine' now owns the pointer
 
     // Reference – an immutable pointer that refers to other data
     // When a reference is taken to a value, we say that the value has been ‘borrowed’.
@@ -324,11 +324,11 @@ fn main() {
     var = 3;
     let ref_var: &i32 = &var;
 
-    println!("{}", var); // Unlike \`mine\`, \`var\` can still be used
+    println!("{}", var); // Unlike 'mine', 'var' can still be used
     println!("{}", *ref_var);
-    // *ref_var = 6; // this would not compile, because \`ref_var\` is an immutable reference
+    // *ref_var = 6; // this would not compile, because 'ref_var' is an immutable reference
     
-    // After the last use of \`ref_var\` above, the borrow ends, so this reassignment is allowed.
+    // After the last use of 'ref_var' above, the borrow ends, so this reassignment is allowed.
     var = 2;
 
     // Mutable reference
@@ -340,7 +340,7 @@ fn main() {
     println!("{}", *ref_var2); // 6 
     // ref_var2 is of type &mut i32, so stores a reference to an i32, not the value.
     
-    // After the last use of \`ref_var2\` above, the borrow ends, so this reassignment is allowed.
+    // After the last use of 'ref_var2' above, the borrow ends, so this reassignment is allowed.
     var2 = 2;
 }
 ```
