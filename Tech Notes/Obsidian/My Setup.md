@@ -16,6 +16,8 @@
 - [obsidian tasks](obsidian://show-plugin?id=obsidian-tasks-plugin)
 - [tagfolder](obsidian://show-plugin?id=obsidian-tagfolder)
 - [execute code](obsidian://show-plugin?id=execute-code)
+- [day planner](obsidian://show-plugin?id=obsidian-day-planner)
+- [Full Calendar](obsidian://show-plugin?id=obsidian-full-calendar)
 
 ## Enable cli
 Settings -> General -> command line interface.
