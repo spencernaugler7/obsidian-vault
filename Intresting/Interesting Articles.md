@@ -12,6 +12,21 @@ git shortlog -sn --no-merges
 ```
 Every contributor ranked by commit count.
 
+# Where do bugs cluster?
+```bash
+git log -i -E --grep="fix|bug|broken" --name-only --format='' | sort | uniq -c | sort -nr | head -20
+```
+
+# Is This Project Accelerating or Dying?
+```bash
+git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
+```
+
+## How Often Is the Team Firefighting
+```bash
+git log --oneline --since="1 year ago" | grep -iE 'revert|hotfix|emergency|rollback'
+```
+
 ## [What Good Requirements Look like](https://projan.ai/blog/what-good-requirements-look-like-and-how-to-write-them)
 
 - **Unambiguous.** Two people reading it separately build the same thing.
