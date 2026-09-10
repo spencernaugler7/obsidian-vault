@@ -35,5 +35,8 @@ Based on the configured endpoint:
 # Notes
 - This change is intended to provide deployment flexibility during the migration period and should be extensible to support additional gateway implementations in the future if needed.
 
+# Questions
+- 
+
 # Todo
 - [ ] 
