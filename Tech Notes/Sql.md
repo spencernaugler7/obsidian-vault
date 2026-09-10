@@ -100,7 +100,7 @@ CREATE PROCEDURE SalesLT.uspGetCustomerCompany
 (
     @LastName nvarchar(50) = NULL, -- default value
     @FirstName nvarchar(50) = NULL,
-    @CompanyId int output -- output value this is how you can return values
+    @CompanyUserId int output -- output value this is how you can return values
 )
 AS
 BEGIN
@@ -112,10 +112,11 @@ BEGIN
     SELECT FirstName, LastName, CompanyName
        FROM SalesLT.Customer
        WHERE FirstName = @FirstName AND LastName = @LastName;
-       
-    select @CompanyId = 
-    from SalesLt.Company
-    where
+    
+    -- set output parameters in any select
+    select @CompanyUserId = c.CompanyUserId
+    from SalesLt.Company c
+    where c.Id = 1
 END
 GO
 ```
