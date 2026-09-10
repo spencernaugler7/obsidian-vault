@@ -1,13 +1,12 @@
 ---
 created: 2026-08-17
 summary: Add language id and client id to the outsource request, defaulted to ASL and Voyce's client id
-source: https://cloudbreak.atlassian.net/browse/WEYI-748?referrer=quick-find&search_id=98cc1de2-cb55-4fcf-a63c-00c99cf02d01
+source: https://cloudbreak.atlassian.net/browse/WEYI-748
 ---
 # Description
 Enhance the Outsource API request model to include LanguageId and ClientId fields. These fields should be automatically populated with default values to ensure all outsource interactions are associated with the correct language and client.
 
 # Background
-
 Currently, outsource requests do not explicitly include the language or client information. To support future extensibility and ensure interactions are created with the correct context, the request payload should include these values.
 
 For the initial implementation:
@@ -16,7 +15,6 @@ For the initial implementation:
 
 These defaults allow the existing workflow to remain unchanged while making the API more flexible for future enhancements.
 # Requirements
-
 #### 1. Update Outsource Request Model
 Add the following fields to the outsource request:
 - LanguageId
@@ -29,6 +27,7 @@ If these fields are not provided by the caller:
 When creating the outsource interaction:
 - Use the resolved LanguageId and ClientId.
 - Persist these values with the interaction so downstream services use the correct context.
+
 # Acceptance Criteria
 - The Outsource API request supports LanguageId and ClientId.
 - Requests without these fields continue to work without modification.
@@ -64,3 +63,16 @@ where a.Id = @pPersonId
 		3. maybe PersonLanguage?
 	2. Language table.
 11. What is the difference between the Client and Provider tables?
+12. How do I know the Language/Client exists already?
+	1. use the request id to query for these records.
+		1. Request->Person->AppUser->ClientUser->Client
+			1. ```sql
+			    select *
+				from WEYIMgr.dbo.AppUser a
+				inner join WEYImgr.dbo.ClientUser b on a.SourceId = b.Id and a.UserType = 'ClientUser'
+			   ```
+		2. Request -> Language 
+
+# Todo
+1. if client id is null set it to voyce default client id
+2. if language id is null set it to the id of the asl language
