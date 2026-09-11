@@ -21,13 +21,13 @@ Data attributes are [evaluated in the order](#attribute-evaluation-order) they a
 
 Sets the value of any HTML attribute to an expression, and keeps it in sync.
 
-```
+```html
 <div data-attr:aria-label="$foo"></div>
 ```
 
 The `data-attr` attribute can also be used to set the values of multiple attributes on an element using a set of key-value pairs, where the keys represent attribute names and the values represent expressions.
 
-```
+```html
 <div data-attr="{'aria-label': $foo, disabled: $bar}"></div>
 ```
 
@@ -39,19 +39,19 @@ The `data-bind` attribute can be placed on any HTML element on which data can be
 
 `data-bind` does **not** inspect the event payload. It only uses the configured event as a signal to re-read the element’s current bound property/value. If you need to pull data from `event` itself, use `data-on:*` instead.
 
-```
+```html
 <input data-bind:foo />
 ```
 
 The signal name can be specified in the key (as above), or in the value (as below). This can be useful depending on the templating language you are using.
 
-```
+```html
 <input data-bind="foo" />
 ```
 
 [Attribute casing](#attribute-casing) rules apply to the signal name.
 
-```
+```html
 <!-- Both of these create the signal \`$fooBar\` -->
 <input data-bind:foo-bar />
 <input data-bind="fooBar" />
@@ -59,13 +59,13 @@ The signal name can be specified in the key (as above), or in the value (as belo
 
 The initial value of the signal is set to the value of the element, unless a signal has already been defined. So in the example below, `$fooBar` is set to `baz`.
 
-```
+```html
 <input data-bind:foo-bar value="baz" />
 ```
 
 Whereas in the example below, `$fooBar` inherits the value `fizz` of the predefined signal.
 
-```
+```html
 <div data-signals:foo-bar="'fizz'">
     <input data-bind:foo-bar value="baz" />
 </div>
@@ -77,7 +77,7 @@ When you predefine a signal, its **type** is preserved during binding. Whenever 
 
 For example, in the code below, `$fooBar` is set to the **number** `10` (not the string `"10"`) when the option is selected.
 
-```
+```html
 <div data-signals:foo-bar="0">
     <select data-bind:foo-bar>
         <option value="10">10</option>
@@ -87,7 +87,7 @@ For example, in the code below, `$fooBar` is set to the **number** `10` (not the
 
 In the same way, you can assign multiple input values to a single signal by predefining it as an **array**. In the example below, `$fooBar` becomes `["fizz", "baz"]` when both checkboxes are checked, and `["", ""]` when neither is checked.
 
-```
+```html
 <div data-signals:foo-bar="[]">
     <input data-bind:foo-bar type="checkbox" value="fizz" />
     <input data-bind:foo-bar type="checkbox" value="baz" />
@@ -98,7 +98,7 @@ In the same way, you can assign multiple input values to a single signal by pred
 
 Input fields of type `file` will automatically encode file contents in base64. This means that a form is not required.
 
-```
+```html
 <input type="file" data-bind:files multiple />
 ```
 
@@ -122,7 +122,7 @@ Modifiers allow you to modify behavior when binding signals using a key.
 
 Native form controls use their built-in binding semantics automatically. Generic custom elements default to `value` and `change`. Use `__prop` and `__event` when a custom element’s live state is stored somewhere else.
 
-```
+```html
 <my-toggle data-bind:is-checked__prop.checked__event.change></my-toggle>
 ```
 
@@ -130,7 +130,7 @@ Native form controls use their built-in binding semantics automatically. Generic
 
 Adds or removes a class to or from an element based on an expression.
 
-```
+```html
 <div data-class:font-bold="$foo == 'strong'"></div>
 ```
 
@@ -138,7 +138,7 @@ If the expression evaluates to `true`, the `font-bold` class is added to the ele
 
 The `data-class` attribute can also be used to add or remove multiple classes from an element using a set of key-value pairs, where the keys represent class names and the values represent expressions.
 
-```
+```html
 <div data-class="{success: $foo != '', 'font-bold': $foo == 'strong'}"></div>
 ```
 
@@ -152,7 +152,7 @@ Modifiers allow you to modify behavior when defining a class name using a key.
 		- `.snake` – Snake case: `my_class`
 		- `.pascal` – Pascal case: `MyClass`
 
-```
+```html
 <div data-class:my-class__case.camel="$foo"></div>
 ```
 
@@ -160,13 +160,13 @@ Modifiers allow you to modify behavior when defining a class name using a key.
 
 Creates a signal that is computed based on an expression. The computed signal is read-only, and its value is automatically updated when any signals in the expression are updated.
 
-```
+```html
 <div data-computed:foo="$bar + $baz"></div>
 ```
 
 Computed signals are useful for memoizing expressions containing other signals. Their values can be used in other expressions.
 
-```
+```html
 <div data-computed:foo="$bar + $baz"></div>
 <div data-text="$foo"></div>
 ```
@@ -175,7 +175,7 @@ Computed signals are useful for memoizing expressions containing other signals. 
 
 The `data-computed` attribute can also be used to create computed signals using a set of key-value pairs, where the keys represent signal names and the values are callables (usually arrow functions) that return a reactive value.
 
-```
+```html
 <div data-computed="{foo: () => $bar + $baz}"></div>
 ```
 
@@ -189,7 +189,7 @@ Modifiers allow you to modify behavior when defining computed signals using a ke
 		- `.snake` – Snake case: `my_signal`
 		- `.pascal` – Pascal case: `MySignal`
 
-```
+```html
 <div data-computed:my-signal__case.kebab="$bar + $baz"></div>
 ```
 
@@ -197,7 +197,7 @@ Modifiers allow you to modify behavior when defining computed signals using a ke
 
 Executes an expression on page load and whenever any signals in the expression change. This is useful for performing side effects, such as updating other signals, making requests to the backend, or manipulating the DOM.
 
-```
+```html
 <div data-effect="$foo = $bar + $baz"></div>
 ```
 
@@ -205,7 +205,7 @@ Executes an expression on page load and whenever any signals in the expression c
 
 Datastar walks the entire DOM and applies plugins to each element it encounters. It’s possible to tell Datastar to ignore an element and its descendants by placing a `data-ignore` attribute on it. This can be useful for preventing naming conflicts with third-party libraries, or when you are unable to [escape user input](https://data-star.dev/reference/security#escape-user-input).
 
-```
+```html
 <div data-ignore data-show-thirdpartylib="">
     <div>
         Datastar will not process this element.
@@ -221,7 +221,7 @@ Datastar walks the entire DOM and applies plugins to each element it encounters.
 
 Similar to the `data-ignore` attribute, the `data-ignore-morph` attribute tells the `PatchElements` watcher to skip processing an element and its children when morphing elements.
 
-```
+```html
 <div data-ignore-morph>
     This element will not be morphed.
 </div>
@@ -233,7 +233,7 @@ Similar to the `data-ignore` attribute, the `data-ignore-morph` attribute tells 
 
 Creates a signal and sets its value to `true` while a fetch request is in flight, otherwise `false`. The signal can be used to show a loading indicator.
 
-```
+```html
 <button data-on:click="@get('/endpoint')"
         data-indicator:fetching
 ></button>
@@ -241,7 +241,7 @@ Creates a signal and sets its value to `true` while a fetch request is in flight
 
 This can be useful for showing a loading spinner, disabling a button, etc.
 
-```
+```html
 <button data-on:click="@get('/endpoint')"
         data-indicator:fetching
         data-attr:disabled="$fetching"
@@ -251,13 +251,13 @@ This can be useful for showing a loading spinner, disabling a button, etc.
 
 The signal name can be specified in the key (as above), or in the value (as below). This can be useful depending on the templating language you are using.
 
-```
+```html
 <button data-indicator="fetching"></button>
 ```
 
 When using `data-indicator` with a fetch request initiated in a `data-init` attribute, you should ensure that the indicator signal is created before the fetch request is initialized.
 
-```
+```html
 <div data-indicator:fetching data-init="@get('/endpoint')"></div>
 ```
 
@@ -277,7 +277,7 @@ Runs an expression when the attribute is initialized. This can happen on page lo
 
 > The expression contained in the [`data-init`](#data-init) attribute is executed when the element attribute is loaded into the DOM. This can happen on page load, when an element is patched into the DOM, and any time the attribute is modified (via a backend action or otherwise).
 
-```
+```html
 <div data-init="$count = 1"></div>
 ```
 
@@ -290,7 +290,7 @@ Modifiers allow you to add a delay to the event listener.
 		- `.1s` – Delay for 1 second (accepts any integer).
 - `__viewtransition` – Wraps the expression in `document.startViewTransition()` when the View Transition API is available.
 
-```
+```html
 <div data-init__delay.500ms="$count = 1"></div>
 ```
 
@@ -298,14 +298,14 @@ Modifiers allow you to add a delay to the event listener.
 
 Sets the text content of an element to a reactive JSON stringified version of signals. Useful when troubleshooting an issue.
 
-```
+```html
 <!-- Display all signals -->
 <pre data-json-signals></pre>
 ```
 
 You can optionally provide a filter object to include or exclude specific signals using regular expressions.
 
-```
+```html
 <!-- Only show signals that include "user" in their path -->
 <pre data-json-signals="{include: /user/}"></pre>
 
@@ -322,7 +322,7 @@ Modifiers allow you to modify the output format.
 
 - `__terse` – Outputs a more compact JSON format without extra whitespace. Useful for displaying filtered data inline.
 
-```
+```html
 <!-- Display filtered signals in a compact format -->
 <pre data-json-signals__terse="{include: /counter/}"></pre>
 ```
@@ -377,7 +377,7 @@ Modifiers allow you to modify behavior when events are triggered. Some modifiers
 
 *\* Only works with built-in events.*
 
-```
+```html
 <button data-on:click__window__debounce.500ms.leading="$foo = ''"></button>
 <div data-on:my-event__case.camel="$foo = ''"></div>
 ```
@@ -386,7 +386,7 @@ Modifiers allow you to modify behavior when events are triggered. Some modifiers
 
 Runs an expression when the element intersects with the viewport.
 
-```
+```html
 <div data-on-intersect="$intersected = true"></div>
 ```
 
@@ -416,7 +416,7 @@ Modifiers allow you to modify the element intersection behavior and the timing o
 		- `.trailing` – Throttle with trailing edge (must come after timing).
 - `__viewtransition` – Wraps the expression in `document.startViewTransition()` when the View Transition API is available.
 
-```
+```html
 <div data-on-intersect__once__full="$fullyIntersected = true"></div>
 ```
 
@@ -424,7 +424,7 @@ Modifiers allow you to modify the element intersection behavior and the timing o
 
 Runs an expression at a regular interval. The interval duration defaults to one second and can be modified using the `__duration` modifier.
 
-```
+```html
 <div data-on-interval="$count++"></div>
 ```
 
@@ -438,7 +438,7 @@ Modifiers allow you to modify the interval duration.
 		- `.leading` – Execute the first interval immediately.
 - `__viewtransition` – Wraps the expression in `document.startViewTransition()` when the View Transition API is available.
 
-```
+```html
 <div data-on-interval__duration.500ms="$count++"></div>
 ```
 
@@ -446,13 +446,13 @@ Modifiers allow you to modify the interval duration.
 
 Runs an expression whenever any signals are patched. This is useful for tracking changes, updating computed values, or triggering side effects when data updates.
 
-```
+```html
 <div data-on-signal-patch="console.log('A signal changed!')"></div>
 ```
 
 The `patch` variable is available in the expression and contains the signal patch details.
 
-```
+```html
 <div data-on-signal-patch="console.log('Signal patch:', patch)"></div>
 ```
 
@@ -476,7 +476,7 @@ Modifiers allow you to modify the timing of the event listener.
 		- `.noleading` – Throttle without leading edge (must come after timing).
 		- `.trailing` – Throttle with trailing edge (must come after timing).
 
-```
+```html
 <div data-on-signal-patch__debounce.500ms="doSomething()"></div>
 ```
 
@@ -486,7 +486,7 @@ Filters which signals to watch when using the [`data-on-signal-patch`](#data-on-
 
 The `data-on-signal-patch-filter` attribute accepts an object with `include` and/or `exclude` properties that are regular expressions.
 
-```
+```html
 <!-- Only react to counter signal changes -->
 <div data-on-signal-patch-filter="{include: /^counter$/}"></div>
 
@@ -501,7 +501,7 @@ The `data-on-signal-patch-filter` attribute accepts an object with `include` and
 
 Preserves the value of an attribute when morphing DOM elements.
 
-```
+```html
 <details open data-preserve-attr="open">
     <summary>Title</summary>
     Content
@@ -510,7 +510,7 @@ Preserves the value of an attribute when morphing DOM elements.
 
 You can preserve multiple attributes by separating them with a space.
 
-```
+```html
 <details open class="foo" data-preserve-attr="open class">
     <summary>Title</summary>
     Content
@@ -521,19 +521,19 @@ You can preserve multiple attributes by separating them with a space.
 
 Creates a new signal that is a reference to the element on which the data attribute is placed.
 
-```
+```html
 <div data-ref:foo></div>
 ```
 
 The signal name can be specified in the key (as above), or in the value (as below). This can be useful depending on the templating language you are using.
 
-```
+```html
 <div data-ref="foo"></div>
 ```
 
 The signal value can then be used to reference the element.
 
-```
+```html
 $foo is a reference to a <span data-text="$foo.tagName"></span> element
 ```
 
@@ -547,7 +547,7 @@ Modifiers allow you to modify behavior when defining references using a key.
 		- `.snake` – Snake case: `my_signal`
 		- `.pascal` – Pascal case: `MySignal`
 
-```
+```html
 <div data-ref:my-signal__case.kebab></div>
 ```
 
@@ -555,13 +555,13 @@ Modifiers allow you to modify behavior when defining references using a key.
 
 Shows or hides an element based on whether an expression evaluates to `true` or `false`. For anything with custom requirements, use [`data-class`](#data-class) instead.
 
-```
+```html
 <div data-show="$foo"></div>
 ```
 
 To prevent flickering of the element before Datastar has processed the DOM, you can add a `display: none` style to the element to hide it initially.
 
-```
+```html
 <div data-show="$foo" style="display: none"></div>
 ```
 
@@ -569,19 +569,19 @@ To prevent flickering of the element before Datastar has processed the DOM, you 
 
 Patches (adds, updates or removes) one or more signals into the existing signals. Values defined later in the DOM tree override those defined earlier.
 
-```
+```html
 <div data-signals:foo="1"></div>
 ```
 
 Signals can be nested using dot-notation.
 
-```
+```html
 <div data-signals:foo.bar="1"></div>
 ```
 
 The `data-signals` attribute can also be used to patch multiple signals using a set of key-value pairs, where the keys represent signal names and the values represent expressions.
 
-```
+```html
 <div data-signals="{foo: {bar: 1, baz: 2}}"></div>
 ```
 
@@ -589,7 +589,7 @@ The value above is written in JavaScript object notation, but JSON, which is a s
 
 Setting a signal’s value to `null` or `undefined` removes the signal.
 
-```
+```html
 <div data-signals="{foo: null}"></div>
 ```
 
@@ -610,7 +610,7 @@ Modifiers allow you to modify behavior when patching signals using a key.
 		- `.pascal` – Pascal case: `MySignal`
 - `__ifmissing` – Only patches signals if their keys do not already exist. This is useful for setting defaults without overwriting existing values.
 
-```
+```html
 <div data-signals:my-signal__case.kebab="1"
      data-signals:foo__ifmissing="1"
 ></div>
@@ -620,14 +620,14 @@ Modifiers allow you to modify behavior when patching signals using a key.
 
 Sets the value of inline CSS styles on an element based on an expression, and keeps them in sync.
 
-```
+```html
 <div data-style:display="$hiding && 'none'"></div>
 <div data-style:background-color="$red ? 'red' : 'blue'"></div>
 ```
 
 The `data-style` attribute can also be used to set multiple style properties on an element using a set of key-value pairs, where the keys represent CSS property names and the values represent expressions.
 
-```
+```html
 <div data-style="{
     display: $hiding ? 'none' : 'flex',
     'background-color': $red ? 'red' : 'green'
@@ -636,7 +636,7 @@ The `data-style` attribute can also be used to set multiple style properties on 
 
 Empty string, `null`, `undefined`, or `false` values will restore the original inline style value if one existed, or remove the style property if there was no initial value. This allows you to use the logical AND operator (`&&`) for conditional styles: `$condition && 'value'` will apply the style when the condition is true and restore the original value when false.
 
-```
+```html
 <!-- When $x is false, color remains red from inline style -->
 <div style="color: red;" data-style:color="$x && 'green'"></div>
 
@@ -650,7 +650,7 @@ The plugin tracks initial inline style values and restores them when data-style 
 
 Binds the text content of an element to an expression.
 
-```
+```html
 <div data-text="$foo"></div>
 ```
 
@@ -658,7 +658,7 @@ Binds the text content of an element to an expression.
 
 Elements are evaluated by walking the DOM in a depth-first manner, and attributes are applied in the order they appear in the element. This is important in some cases, such as when using `data-indicator` with a fetch request initiated in a `data-init` attribute, in which the indicator signal must be created before the fetch request is initialized.
 
-```
+```html
 <div data-indicator:fetching data-init="@get('/endpoint')"></div>
 ```
 
@@ -683,7 +683,7 @@ It is possible to alias `data-*` attributes to a custom alias (`data-alias-*`, f
 
 We maintain a `data-star-*` aliased version that can be included as follows.
 
-```
+```html
 <script type="module" src="https://cdn.jsdelivr.net/gh/starfederation/datastar@v1.0.2/bundles/datastar-aliased.js"></script>
 ```
 
@@ -693,7 +693,7 @@ Datastar expressions used in `data-*` attributes parse signals, converting all d
 
 A variable `el` is available in every Datastar expression, representing the element that the attribute exists on.
 
-```
+```html
 <div id="bar" data-text="$foo + el.id"></div>
 ```
 
@@ -703,7 +703,7 @@ Read more about [Datastar expressions](https://data-star.dev/guide/datastar_expr
 
 Datastar has built-in error handling and reporting for runtime errors. When a data attribute is used incorrectly, for example `data-text-foo`, the following error message is logged to the browser console.
 
-```
+```txt
 Uncaught datastar runtime error: textKeyNotAllowed
 More info: https://data-star.dev/errors/key_not_allowed?metadata=%7B%22plugin%22%3A%7B%22name%22%3A%22text%22%2C%22type%22%3A%22attribute%22%7D%2C%22element%22%3A%7B%22id%22%3A%22%22%2C%22tag%22%3A%22DIV%22%7D%2C%22expression%22%3A%7B%22rawKey%22%3A%22textFoo%22%2C%22key%22%3A%22foo%22%2C%22value%22%3A%22%22%2C%22fnContent%22%3A%22%22%7D%7D
 Context: {
