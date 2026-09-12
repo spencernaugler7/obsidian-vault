@@ -11,7 +11,13 @@ tags:
   - web
   - clippings
 ---
-If "ui = fn(state)" has ever resonated with you as a frontend developer you owe it to yourself to consider we as an industry have been going about it all wrong for years. Likely your state already lives on the backend and by syncing it to the frontend to render UI we're adding measurable amounts of unnecessary complexity. If you're to radically simplify if you development environments and production deployments then read on…
+
+If "ui = fn(state)" has ever resonated with you as a frontend developer you owe
+it to yourself to consider we as an industry have been going about it all wrong
+for years. Likely your state already lives on the backend and by syncing it to
+the frontend to render UI we're adding measurable amounts of unnecessary
+complexity. If you're to radically simplify if you development environments and
+production deployments then read on…
 
 Some preamble before we get started:
 
@@ -40,20 +46,16 @@ function Button({ label }) {
 It's really great and beautiful in its simplicity. However when you extrapolate this in practice real-world applications with a lot of complex state we're looking at:
 
 - Syncing that state from the backend to the frontend to render any updates after initial page load
-	- Now you're bring things in like [Tanstack Query](https://tanstack.com/query/latest), [Redux](https://redux.js.org/), [signals](https://preactjs.com/guide/v10/signals/) etc.
-	- Polling API endpoints or getting pushed JSON
-	- Deserializing that JSON to store in memory. Oh the deserialization! Oh the humanity!
+- Now you're bring things in like [Tanstack Query](https://tanstack.com/query/latest), [Redux](https://redux.js.org/), [signals](https://preactjs.com/guide/v10/signals/) etc.
+- Polling API endpoints or getting pushed JSON
+- Deserializing that JSON to store in memory. Oh the deserialization! Oh the humanity!
 - Hydrating components on the frontend when server rendering
-	- Sending initial HTML along with the state needed to render so that it can then re-render in to a client side renderable app for future updates.
+- Sending initial HTML along with the state needed to render so that it can then re-render in to a client side renderable app for future updates.
 
 Now if your state really does only live locally, great, but still consider authoring a native app.
 
-```
 This isn't for you
-```
-
 That is a lot of extra work to get some HTML on the page when your backend can serve HTML directly and is the true owner of your state anyway.
-
 This is just the read path too. What about updating state? Well again we have a beautiful out of context example.
 
 ```jsx
@@ -77,12 +79,12 @@ function App() {
 With a real-world application we're looking at:
 
 - Tanstack Query, [zustand](https://github.com/pmndrs/zustand), ([pick your poison](https://dev.to/joodi/modern-react-state-management-in-2025-a-practical-guide-2j8f)) or calling `fetch` inside a useEffect where hopefully you remembered to account for all the various loading and error states involved in making a network request OH AND that your useEffect dependency array is g2g
-	- Even with Tanstack Query you need to understand how to author a mutation and how that impacts your local cache etc.
-	- Do you really want to baby-sit your client side cache?!
+- Even with Tanstack Query you need to understand how to author a mutation and how that impacts your local cache etc.
+- Do you really want to baby-sit your client side cache?!
 - OK this update also needs to sync the change to the backend over the network
-	- I HATE the network it's so slow…
-	- Better do this as an [optimistic update](https://xcancel.com/DelaneyGillilan/status/1968763070366228729#m) …
-	- OK so I have some pretend state, on top of the copy of the backend state… wait wtf I thought it was just supposed to be `ui = fn(state)`! Shit!
+- I HATE the network it's so slow…
+- Better do this as an [optimistic update](https://xcancel.com/DelaneyGillilan/status/1968763070366228729#m) …
+- OK so I have some pretend state, on top of the copy of the backend state… wait wtf I thought it was just supposed to be `ui = fn(state)`! Shit!
 - t
 
 I've built many applications like this. I've enjoyed using some of these tools/approaches. I admired how well abstracted and nicely designed the API is for tanstack-query (it really is good software!!). All this stuff feels like a known quantity or just how you build modern applications. I joined the cargo cult.
@@ -209,7 +211,7 @@ So if you're even a little curious about simplifying your web projects without s
 
 If you're happy and productive writing React or other client heavy apps that's great.
 
-```
+```text
 This isn't for you
 ```
 
@@ -222,7 +224,7 @@ The example in this post is simplified to help highlight the `ui = fn(state)` co
 Curious about how far people are taking the concept with Datastar? Check out these amazing projects:
 
 - [https://example.andersmurphy.com](https://example.andersmurphy.com/)
-	- [https://www.youtube.com/watch?v=xzC3g0qIRro&t=2312s](https://www.youtube.com/watch?v=xzC3g0qIRro&t=2312s)
+- [https://www.youtube.com/watch?v=xzC3g0qIRro&t=2312s](https://www.youtube.com/watch?v=xzC3g0qIRro&t=2312s)
 - [https://cells.andersmurphy.com](https://cells.andersmurphy.com/)
 - [https://checkboxes.andersmurphy.com](https://checkboxes.andersmurphy.com/)
 - [https://conductorsam.com](https://conductorsam.com/)
