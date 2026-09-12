@@ -82,17 +82,17 @@
 | [\x41]    | Matches the character at hexadecimal position 41 in the ASCII table, i.e. A | [\x41-\x45]{3} | ABE                                                                                                    |
 ## [Anchors](https://www.rexegg.com/regex-anchors.html) and [Boundaries](https://www.rexegg.com/regex-boundaries.html)
 
-|Anchor|Legend|Example|Sample Match|
-|---|---|---|---|
-|^|[Start of string](https://www.rexegg.com/regex-anchors.html#caret) or [start of line](https://www.rexegg.com/regex-anchors.html#carmulti) depending on multiline mode. (But when [^inside brackets], it means "not")|^abc .*|abc (line start)|
-|$|[End of string](https://www.rexegg.com/regex-anchors.html#dollar) or [end of line](https://www.rexegg.com/regex-anchors.html#eol) depending on multiline mode. Many engine-dependent subtleties.|.*? the end$|this is the end|
-|\A|[Beginning of string](https://www.rexegg.com/regex-anchors.html#A)  <br>(all major engines except JS)|\Aabc[\d\D]*|abc (string...  <br>...start)|
-|\z|[Very end of the string](https://www.rexegg.com/regex-anchors.html#z)  <br>Not available in Python and JS|the end\z|this is...\n...**the end**|
-|\Z|[End of string](https://www.rexegg.com/regex-anchors.html#Z) or (except Python) before final line break  <br>Not available in JS|the end\Z|this is...\n...**the end**\n|
-|\G|[Beginning of String or End of Previous Match](https://www.rexegg.com/regex-anchors.html#G)  <br>.NET, Java, PCRE (C, PHP, R…), Perl, Ruby|||
-|\b|[Word boundary](https://www.rexegg.com/regex-boundaries.html#wordboundary)  <br>Most engines: position where one side only is an ASCII letter, digit or underscore|Bob.*\bcat\b|Bob ate the cat|
-|\b|[Word boundary](https://www.rexegg.com/regex-boundaries.html#wordboundary)  <br>.NET, Java, Python 3, Ruby: position where one side only is a Unicode letter, digit or underscore|Bob.*\b\кошка\b|Bob ate the кошка|
-|\B|[Not a word boundary](https://www.rexegg.com/regex-boundaries.html#notb)|c.*\Bcat\B.*|copycats|
+| Anchor | Legend                                                                                                                                                                                                               | Example         | Sample Match                  |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------------------- |
+| ^      | [Start of string](https://www.rexegg.com/regex-anchors.html#caret) or [start of line](https://www.rexegg.com/regex-anchors.html#carmulti) depending on multiline mode. (But when [^inside brackets], it means "not") | ^abc .*         | abc (line start)              |
+| $      | [End of string](https://www.rexegg.com/regex-anchors.html#dollar) or [end of line](https://www.rexegg.com/regex-anchors.html#eol) depending on multiline mode. Many engine-dependent subtleties.                     | .*? the end$    | this is the end               |
+| \A     | [Beginning of string](https://www.rexegg.com/regex-anchors.html#A)  <br>(all major engines except JS)                                                                                                                | \Aabc[\d\D]*    | abc (string...  <br>...start) |
+| \z     | [Very end of the string](https://www.rexegg.com/regex-anchors.html#z)  <br>Not available in Python and JS                                                                                                            | the end\z       | this is...\n...**the end**    |
+| \Z     | [End of string](https://www.rexegg.com/regex-anchors.html#Z) or (except Python) before final line break  <br>Not available in JS                                                                                     | the end\Z       | this is...\n...**the end**\n  |
+| \G     | [Beginning of String or End of Previous Match](https://www.rexegg.com/regex-anchors.html#G)  <br>.NET, Java, PCRE (C, PHP, R…), Perl, Ruby                                                                           |                 |                               |
+| \b     | [Word boundary](https://www.rexegg.com/regex-boundaries.html#wordboundary)  <br>Most engines: position where one side only is an ASCII letter, digit or underscore                                                   | Bob.*\bcat\b    | Bob ate the cat               |
+| \b     | [Word boundary](https://www.rexegg.com/regex-boundaries.html#wordboundary)  <br>.NET, Java, Python 3, Ruby: position where one side only is a Unicode letter, digit or underscore                                    | Bob.*\b\кошка\b | Bob ate the кошка             |
+| \B     | [Not a word boundary](https://www.rexegg.com/regex-boundaries.html#notb)                                                                                                                                             | c.*\Bcat\B.*    | copycats                      |
 ## POSIX Classes
 
 | Character | Legend                                                  | Example         | Sample Match |
