@@ -20,7 +20,7 @@ Datastar provides actions (helper functions) that can be used in Datastar expres
 
 Allows accessing signals without subscribing to their changes in expressions.
 
-```
+```html
 <div data-text="$foo + @peek(() => $bar)"></div>
 ```
 
@@ -34,7 +34,7 @@ Sets the value of all matching signals (or all signals if no filter is used) to 
 
 > The [Datastar Inspector](https://data-star.dev/pro#datastar-inspector) can be used to inspect and filter current signals and view signal patch events in real-time.
 
-```
+```html
 <!-- Sets the \`foo\` signal only -->
 <div data-signals:foo="false">
     <button data-on:click="@setAll(true, {include: /^foo$/})"></button>
@@ -59,7 +59,7 @@ Toggles the boolean value of all matching signals (or all signals if no filter i
 
 > The [Datastar Inspector](https://data-star.dev/pro#datastar-inspector) can be used to inspect and filter current signals and view signal patch events in real-time.
 
-```
+```html
 <!-- Toggles the \`foo\` signal only -->
 <div data-signals:foo="false">
     <button data-on:click="@toggleAll({include: /^foo$/})"></button>
@@ -84,7 +84,7 @@ Toggles the boolean value of all matching signals (or all signals if no filter i
 
 Sends a `GET` request to the backend using the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). The URI can be any valid endpoint, and the response type any of the allowed [response types](#response-handling), or a `204 No Content` response if the response body is empty.
 
-```
+```html
 <button data-on:click="@get('/endpoint')"></button>
 ```
 
@@ -94,19 +94,19 @@ By default, requests are sent with a `Datastar-Request: true` header, and a `{da
 
 When a page is hidden (in a background tab, for example), the default behavior for `get` requests is for the SSE connection to be closed, and reopened when the page becomes visible again. To keep the connection open when the page is hidden, set the [`openWhenHidden`](#openWhenHidden) option to `true`.
 
-```
+```html
 <button data-on:click="@get('/endpoint', {openWhenHidden: true})"></button>
 ```
 
 It’s possible to send form encoded requests by setting the `contentType` option to `form`. This sends requests using `application/x-www-form-urlencoded` encoding.
 
-```
+```html
 <button data-on:click="@get('/endpoint', {contentType: 'form'})"></button>
 ```
 
 It’s also possible to send requests using `multipart/form-data` encoding by specifying it in the `form` element’s [`enctype`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/enctype) attribute. This should be used when uploading files. See the [form data example](https://data-star.dev/examples/form_data).
 
-```
+```html
 <form enctype="multipart/form-data">
     <input type="file" name="file" />
     <button data-on:click="@post('/endpoint', {contentType: 'form'})"></button>
@@ -119,7 +119,7 @@ It’s also possible to send requests using `multipart/form-data` encoding by sp
 
 Works the same as [`@get()`](#get) but sends a `POST` request to the backend.
 
-```
+```html
 <button data-on:click="@post('/endpoint')"></button>
 ```
 
@@ -129,7 +129,7 @@ Works the same as [`@get()`](#get) but sends a `POST` request to the backend.
 
 Works the same as [`@get()`](#get) but sends a `PUT` request to the backend.
 
-```
+```html
 <button data-on:click="@put('/endpoint')"></button>
 ```
 
@@ -139,7 +139,7 @@ Works the same as [`@get()`](#get) but sends a `PUT` request to the backend.
 
 Works the same as [`@get()`](#get) but sends a `PATCH` request to the backend.
 
-```
+```html
 <button data-on:click="@patch('/endpoint')"></button>
 ```
 
@@ -149,7 +149,7 @@ Works the same as [`@get()`](#get) but sends a `PATCH` request to the backend.
 
 Works the same as [`@get()`](#get) but sends a `DELETE` request to the backend.
 
-```
+```html
 <button data-on:click="@delete('/endpoint')"></button>
 ```
 

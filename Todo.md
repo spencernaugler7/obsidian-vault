@@ -2,4 +2,4 @@
 - [ ] Pay utility bill.📅 2026-08-31 ➕ 2026-08-29 
 - [ ] Figure out which stuff to haul down 📅 2026-08-30 
 - [x] Call dealer about title. Have not recieved 📅 2026-08-31 ✅ 2026-08-31
-- [ ] Call bmv about licence plate. 📅 2026-09-1
+- [x] Call bmv about licence plate. 📅 2026-09-1

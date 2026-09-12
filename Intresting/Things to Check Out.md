@@ -1,3 +1,4 @@
+### Projects to check out.
 - [Hyper Markdown](https://hyper-markdown.org/)
 - [light phone](https://www.thelightphone.com/)
 - [Xonsh](https://xon.sh/)
@@ -9,6 +10,10 @@
 - [debloat](https://debloat.dev/)
 - [crosspoint reader](https://crosspointreader.com/)
 
-
 ### Explored
 - [rust desk](https://rustdesk.com/docs/en/)
+
+### Sites to check out
+- https://harmful.cat-v.org/
+- https://www.worldpackers.com/
+- https://www.couchsurfing.com/

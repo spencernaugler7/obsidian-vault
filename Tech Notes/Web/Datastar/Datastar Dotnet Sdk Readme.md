@@ -13,10 +13,11 @@ tags:
 Real-time Hypermedia first Library and Framework for dotnet
 
 The dotnet Datastar library is written in two parts:
+
 - The F# library (StarFederation.Datastar.FSharp) implements the [Architecture Decision Record: Datastar SDK](https://github.com/starfederation/datastar/blob/develop/sdk/ADR.md) to provide the core, Datastar functionality.
 - The C# library (StarFederation.Datastar) uses the F# library for its core functionality as well as providing Dependency Injection, Model Binding, and C#-friendly types.
 
-# HTML Frontend
+## HTML Frontend
 
 ```html
 <main class="container" id="main" data-signals="{'input':'','output':'empty'}">
@@ -28,7 +29,7 @@ The dotnet Datastar library is written in two parts:
 </main>
 ```
 
-# C# Backend
+## C# Backend
 
 ```csharp
 using StarFederation.Datastar;
@@ -75,7 +76,7 @@ app.MapPost("/changeOutput", async (IDatastarService datastarService) => ...
 });
 ```
 
-# F# Backend
+## F# Backend
 
 ```fsharp
 namespace HelloWorld
@@ -125,7 +126,7 @@ module Program =
         0
 ```
 
-# Model Binding
+## Model Binding
 
 ```csharp
 public class MySignals {
