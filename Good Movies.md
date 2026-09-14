@@ -9,3 +9,4 @@ Edgerunners: [current ep](https://aniwaves.ru/watch/cyberpunk-edgerunners-80125/
 - Blazzing Saddles
 - Apocalypse Now
 - The Good The Bad and The Ugly.
+- Crank: High Voltage
