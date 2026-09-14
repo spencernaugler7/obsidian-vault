@@ -17,7 +17,6 @@ ___
 - how should I handle authentication/autorization
 ___
 ## My own custom Speed reading application.
-
 ### Requirements
 - Speed read text from a pdf
 - demo in this video intro: [rsv app](https://www.youtube.com/watch?v=0UDhADj2Ljk)
@@ -57,7 +56,6 @@ More features
 1. add option to automatically collapse all headers when first opening a note.
 ___
 ## Interesting phrase thesaurus
-
 want a site where we list a common saying and we find intresting way to say the same thing. Urban dictionary for thesurusing.
 
 > [!Example]
@@ -77,3 +75,8 @@ Don't know which engine to use.
 
 ---
 ## WebOne 
+Basically a contact list
+- perhaps expand into groupme 
+---
+# interpol.cc clone.
+basically tiktok.
