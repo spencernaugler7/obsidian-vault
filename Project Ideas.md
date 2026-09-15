@@ -77,6 +77,9 @@ Don't know which engine to use.
 ## WebOne 
 Basically a contact list
 - perhaps expand into groupme 
+
+### Todo
+- [ ] Figure out why contact item isn't rendering correctly.
 ---
 # interpol.cc clone.
 basically tiktok.
