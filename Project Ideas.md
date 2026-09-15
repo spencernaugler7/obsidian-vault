@@ -83,3 +83,24 @@ Basically a contact list
 ---
 # interpol.cc clone.
 basically tiktok.
+
+---
+## Issue Tracker
+
+### Features
+- title, markdown description, date created,
+- bug status
+- related bugs
+- labels
+- assignee
+- severity
+
+### ideal constraints
+- self contained binary, should be easily deployable and hostable.
+
+### advanced features
+- kanban board.
+- duplicate issuse.
+- attachments.
+- comments/discussion
+- attach to version control branch.

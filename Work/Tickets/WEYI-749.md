@@ -12,11 +12,13 @@ The current implementation is tightly coupled to the existing Voyce Gateway endp
 The selected gateway should be determined through configuration, allowing environments to switch between the two implementations as needed.
 
 # Requirements
+
 #### 1. Configurable Gateway Endpoint
 Add a configuration setting that determines which gateway endpoint will be used for all outsource API requests.
 Supported options:
 - Voyce Gateway (current implementation)
 - Cloudbreak Gateway
+
 #### 2. Routing Logic
 Based on the configured endpoint:
 - Route all supported outsource API requests to the selected gateway.
