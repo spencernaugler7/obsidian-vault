@@ -1,12 +1,12 @@
 ---
-title: "(iterate think thoughts): Managing Complex Application State with Reactive Data Flows"
-source: "https://yogthos.net/posts/2026-09-12-reactive-dataflow.html"
+title: Managing Complex Application State with Reactive Data Flows
+source: https://yogthos.net/posts/2026-09-12-reactive-dataflow.html
 author:
 published:
 created: 2026-09-13
-description: "Dmitri's blog about programming, Clojure, and software development"
+description: Dmitri's blog about programming, Clojure, and software development
 tags:
-  - "clippings"
+  - clippings
 ---
 ## Managing Complex Application State with Reactive Data Flows
 
@@ -59,7 +59,7 @@ Lane A subscribes with `m/observe`, which pushes values at the consumer from a r
 
 Lane B pulls one line per unit of demand instead, so when the consumer slows down, the OS pipe fills up causing the producer to stall. In this scenario, the pressure stays at the source so that values aren't dropped.
 
-```bash
+```clojure
 (defn- pulled-lines
   "A flow that reads one line per unit of demand. \`m/via m/blk\` moves the
   blocking read off the flow's thread; because nothing reads ahead, the
@@ -82,7 +82,7 @@ I tend to think of an application as a state machine, and that's really the core
 
 Here we can see what that looks like in concrete terms on the demo dashboard. A sample lands in the document as a single transaction on the `[:sample]` path which triggers a cascade of rules. The events are declared as data with each explicitly stating the paths it reads and writes, which allows computing the relationship graph.
 
-```ruby
+```clojure
 (def events
   [{:id      :record-history
     :inputs  [:sample]
@@ -153,7 +153,7 @@ In the dashboard, the authoritative Domino context lives in an atom which is wri
 
 The page itself is then just a function of that snapshot.
 
-```ruby
+```clojure
 (defn fragment
   "The live region, rendered from one published snapshot."
   [live?]
@@ -180,7 +180,7 @@ Notably, Domino effects never perform IO themselves. Instead, an effect posts a 
 
 The effect that asks for alert delivery fires on transitions to post a request onto the bus.
 
-```ruby
+```edn
 {:id      :announce-alert
  :inputs  [:alert-level]
  :handler (fn [_ {:keys [alert-level]}]
@@ -215,7 +215,7 @@ The supervisor fiber sits on the other side of the bus to consume requests and t
 
 The alert below calls the sink, and retries with linear backoff while the sink keeps refusing, writing every attempt back into the model. The sink's failure rate is itself a slider, so retries can be exercised on demand.
 
-```ruby
+```clojure
 (defn alert-task
   "Deliver an alert, retrying with linear backoff."
   [level max-attempts]
@@ -237,7 +237,7 @@ The full task also gives up after the configured number of attempts, and a cance
 
 User input is treated as just another event into the system. Every slider transacts new values into the document to trigger rules and effects.
 
-```bash
+```clojure
 (defn- control-route
   "Every slider lands here: coerce, transact, and let Domino's effects
   act on the change downstream."
