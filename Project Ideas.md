@@ -67,24 +67,24 @@ want a site where we list a common saying and we find intresting way to say the 
 Planned features
 - There should be a mechanism that allows them to add a source where the quote
 - Users can add more phrases too say it.
----
+___
 Wordle game
 
 Use this api: https://www.wordsapi.com/
 Don't know which engine to use. 
 
----
+___
 ## WebOne 
 Basically a contact list
 - perhaps expand into groupme 
 
 ### Todo
 - [ ] Figure out why contact item isn't rendering correctly.
----
+___
 # interpol.cc clone.
 basically tiktok.
 
----
+___
 ## Issue Tracker
 
 ### Features
@@ -104,3 +104,6 @@ basically tiktok.
 - attachments.
 - comments/discussion
 - attach to version control branch.
+
+___
+# Cubeworld style game.
