@@ -9,6 +9,7 @@
 - [hister](https://hister.org/) personal search engine.
 - [debloat](https://debloat.dev/)
 - [crosspoint reader](https://crosspointreader.com/)
+- [tin - postgres search engine](https://planetscale.com/docs/postgres/search)
 
 ### Explored
 - [rust desk](https://rustdesk.com/docs/en/)
