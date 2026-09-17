@@ -1,3 +1,7 @@
+---
+tags:
+  - sql
+---
 ## Find tables with column name
 Tsql
 ```sql
