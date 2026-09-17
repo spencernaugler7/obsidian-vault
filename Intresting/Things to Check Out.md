@@ -10,6 +10,7 @@
 - [debloat](https://debloat.dev/)
 - [crosspoint reader](https://crosspointreader.com/)
 - [tin - postgres search engine](https://planetscale.com/docs/postgres/search)
+- [vinix](https://github.com/vlang/vinix#build-instructions)
 
 ### Explored
 - [rust desk](https://rustdesk.com/docs/en/)
@@ -18,3 +19,7 @@
 - https://harmful.cat-v.org/
 - https://www.worldpackers.com/
 - https://www.couchsurfing.com/
+
+### Tools to check out
+- [or tools](https://developers.google.com/optimization)
+- [z3](https://microsoft.github.io/z3guide/)
