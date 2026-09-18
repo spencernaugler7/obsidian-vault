@@ -11,6 +11,7 @@
 - [crosspoint reader](https://crosspointreader.com/)
 - [tin - postgres search engine](https://planetscale.com/docs/postgres/search)
 - [vinix](https://github.com/vlang/vinix#build-instructions)
+- [keycloak](https://www.keycloak.org/)
 
 ### Explored
 - [rust desk](https://rustdesk.com/docs/en/)
