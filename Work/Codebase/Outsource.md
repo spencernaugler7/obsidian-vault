@@ -1,5 +1,5 @@
 # Outsource request overview.
-1. Voyce -> Martti   VoyceGateway v1/outsource
+1. Voyce -> Martti   `VoyceGateway v1/outsource`
 2. Martti -> Voyce   `v1/outsource/accept`  
 3. Martti -> Voyce   `v1/outsource/finish` 
 4. Voyce -> Martti VoyceGateway delete `v1/outsource/{id}` (only if it already exists)
