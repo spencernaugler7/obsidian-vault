@@ -118,14 +118,16 @@ pass: qQYQiHOBPR8zR61qxYqX45quvihF2uzk
 ___
 ## bandit 13
 no pass just get private key and use it for 14
-
 ```shell
-cat /etc/bandit_pass/bandit14
+scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
 ```
-pass: 
+pass: use downloaded ssh key.
 
 ___
 ## bandit 14
+> [!note]
+> don't make key accessible to other users via `chmod o= key.private`
+> add key to ssh via `ssh -i key.private`
 
 ```shell
 echo "MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS" | nc localhost 30000 -t
