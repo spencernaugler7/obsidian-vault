@@ -1,118 +1,107 @@
-# Bandit Notes
-
-[bandit link](https://overthewire.org/wargames/bandit)
-
+---
+source: https://overthewire.org/wargames/bandit
+tags:
+---
 ## Bandit 0
-
 login
 
 ```shell
-ssh -p 2220 bandit0@bandit.labs.overthewire.org
+ssh -p 2220 bandit0@bandit.labs.overthewire.org # pass: bandit0
 ```
-
-pass: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+pass: 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
 
 ---
-
 ## Bandit 1
-
 command to solve
 
 ```shell
 cat ./-
 ```
-
-pass: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+pass: PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
 
 ---
-
 ## Bandit 2
 
 ```shell
 cat ./'--spaces in this filename--'
 ```
-
-pass: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+pass: 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
 
 ---
-
 ## Bandit 3
 
 ```shell
 cd inhere
 cat '...Hiding-From-You'
 ```
-
-pass: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+pass: 
 
 ---
-
 ## Bandit 4
 
 ```shell
 cat ./-file07
 ```
+pass: 
 
-pass: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
-
+___
 ## Bandit 5
 
 ```shell
 find . -size 1033c
 cat ./maybehere07/.file2
 ```
+pass: 
 
-pass: HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
-
+___
 ## bandit 6
 
 ```shell
 find / -size 33c -group bandit6 -user bandit7 2> /dev/null
 cat /var/lib/dpkg/info/bandit7.password
 ```
+pass: 
 
-pass: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
-
+___
 ## bandit 7
 
 ```shell
 grep "millionth" data.txt
 ```
-
-pass: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+pass: 
 
 ## bandit 8
 
 ```shell
 sort data.txt | uniq -u
 ```
+pass: 
 
-pass: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
-
+___
 ## bandit 9
 
 ```shell
 strings data.txt | grep "="
 ```
+pass: 
 
-pass: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
-
+___
 ## bandit 10
 
 ```shell
 base64 -d data.txt
 ```
+pass: 
 
-pass: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
-
+___
 ## bandit 11
 
 ```shell
 cat data.txt | tr 'a-z' 'n-za-m' | tr 'A-Z' 'N-ZA-M'
 ```
+pass: 
 
-pass: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
-
+___
 ## bandit 12
 
 ```shell
@@ -124,27 +113,26 @@ mv archive archive.tar
 tar xf archive.tar
 // repeat several times check teh file with the "file" command
 ```
+pass: 
 
-pass: FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
-
+___
 ## bandit 13
-
 no pass just get private key and use it for 14
 
 ```shell
 cat /etc/bandit_pass/bandit14
 ```
+pass: 
 
-pass: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
-
+___
 ## bandit 14
 
 ```shell
 echo "MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS" | nc localhost 30000 -t
 ```
+pass: 
 
-pass: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
-
+___
 ## bandit 15
 
 ```shell
@@ -154,8 +142,9 @@ openssl s_client localhost:30001
 to initialize the connection
 then paste the previous pass and hit enter.
 
-pass: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+pass: 
 
+___
 ## bandit 16
 
 ```shell
@@ -175,31 +164,32 @@ the server still sent a response it is just covered up by the keyupdate. solutio
 
 no pass private key used
 
+___
 ## bandit 17
 
 ```shell
 diff passwords.old passwords.new
 ```
+pass: 
 
-pass: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
-
+___
 ## bandit 18
 
 ```shell
 ssh -p 2220 bandit18@bandit.labs.overthewire.org /bin/bash --norc
 cat readme
 ```
+pass: 
 
-pass: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
-
+___
 ## bandit 19
 
 ```shell
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
+pass: 
 
-pass: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
-
+___
 ## bandit 20
 
 ```shell
