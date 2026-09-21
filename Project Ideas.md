@@ -8,6 +8,7 @@
 - should I build it like zellij/tmux/screen, create a ui shell to host the actual keyboard runner.
 - which lang should I use?
 	- use rust + ratatui
+
 ___
 ## Make a groupme clone
 - use asp.net core
@@ -15,6 +16,7 @@ ___
 - use datastar
 ### Questions
 - how should I handle authentication/autorization
+
 ___
 ## My own custom Speed reading application.
 ### Requirements
@@ -30,6 +32,7 @@ ___
 - [pdfpig](https://github.com/UglyToad/PdfPig/wiki)
 - [webui frontend](https://webui.me/docs.html#/)
   - [Csharp lib](https://github.com/salvadordf/WebUI4CSharp)
+
 ___
 ## File include obsidian plugin
 Want to use this to edit config files from multiple sources from one easy place: obsidian.
@@ -37,6 +40,7 @@ Want to use this to edit config files from multiple sources from one easy place:
 - Make an obsidian plugin that can embed a file in a markdown note from any directory on the filesystem. 
 - We can also signify a line number range or several ranges to embed the file. 
 - We can also edit this file directly from the markdown note.
+
 ___
 ## Note auto population from source obsidian plugin.
 Want to create an obsidian plugin. This plugin reads a  "source" frontmatter tag. the plugin then downloads the raw version of the source. Depending on the current contents of the note the plugin can do a copule things
@@ -45,6 +49,7 @@ Want to create an obsidian plugin. This plugin reads a  "source" frontmatter tag
 Plans for features.
 - Initially just work with git repositories.
 - Expand functionality to handle user edits with some kind of merge editor.
+
 ___
 ## Expand/Collapse all headings Obsidian plugin.
 Add the ability to expand/collapse all headers in the current note.
@@ -54,6 +59,7 @@ Ways to run
 
 More features
 1. add option to automatically collapse all headers when first opening a note.
+
 ___
 ## Interesting phrase thesaurus
 want a site where we list a common saying and we find intresting way to say the same thing. Urban dictionary for thesurusing.
@@ -67,8 +73,9 @@ want a site where we list a common saying and we find intresting way to say the 
 Planned features
 - There should be a mechanism that allows them to add a source where the quote
 - Users can add more phrases too say it.
+
 ___
-Wordle game
+## Wordle game
 
 Use this api: https://www.wordsapi.com/
 Don't know which engine to use. 
@@ -80,8 +87,9 @@ Basically a contact list
 
 ### Todo
 - [ ] Figure out why contact item isn't rendering correctly.
+
 ___
-# interpol.cc clone.
+## interpol.cc clone.
 basically tiktok.
 
 ___
@@ -106,7 +114,7 @@ ___
 - attach to version control branch.
 
 ___
-# Cubeworld style game.
+## Cubeworld style game.
 
 ___
 ## Create a service to make fake phone numbers.
