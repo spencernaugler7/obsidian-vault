@@ -51,7 +51,7 @@ ___
 find . -size 1033c
 cat ./maybehere07/.file2
 ```
-pass: 
+pass: pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
 
 ___
 ## bandit 6
@@ -60,7 +60,7 @@ ___
 find / -size 33c -group bandit6 -user bandit7 2> /dev/null
 cat /var/lib/dpkg/info/bandit7.password
 ```
-pass: 
+pass: Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3
 
 ___
 ## bandit 7
@@ -68,14 +68,14 @@ ___
 ```shell
 grep "millionth" data.txt
 ```
-pass: 
+pass: VR1ljMayciFxbnUokuQmJFw6QC9VKtub
 
 ## bandit 8
 
 ```shell
 sort data.txt | uniq -u
 ```
-pass: 
+pass: EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl
 
 ___
 ## bandit 9
@@ -83,7 +83,7 @@ ___
 ```shell
 strings data.txt | grep "="
 ```
-pass: 
+pass: B0s2khmbT9u0geKuOoVGW3JZKhndE3BG
 
 ___
 ## bandit 10
@@ -91,7 +91,7 @@ ___
 ```shell
 base64 -d data.txt
 ```
-pass: 
+pass: pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro
 
 ___
 ## bandit 11
@@ -99,7 +99,7 @@ ___
 ```shell
 cat data.txt | tr 'a-z' 'n-za-m' | tr 'A-Z' 'N-ZA-M'
 ```
-pass: 
+pass: GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
 
 ___
 ## bandit 12
@@ -113,7 +113,7 @@ mv archive archive.tar
 tar xf archive.tar
 // repeat several times check teh file with the "file" command
 ```
-pass: 
+pass: qQYQiHOBPR8zR61qxYqX45quvihF2uzk
 
 ___
 ## bandit 13
