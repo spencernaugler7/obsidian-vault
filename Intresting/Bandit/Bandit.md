@@ -126,25 +126,26 @@ pass: use downloaded ssh key.
 ___
 ## bandit 14
 > [!note]
-> don't make key accessible to other users via `chmod o= key.private`
-> add key to ssh via `ssh -i key.private`
+> - don't make key accessible to other users via `chmod o= key.private` and `chmod g= key.private`
+> - add key to ssh via `ssh -i key.private`
 
-```shell
-echo "MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS" | nc localhost 30000 -t
+```bash
+cat /etc/bandit_pass/bandit14 # pass: aaWecNkG4FhxJQxz07uiwzVP6bJiYS65
+echo "aaWecNkG4FhxJQxz07uiwzVP6bJiYS65" | nc localhost 30000 -t
 ```
-pass: 
+pass: pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
 
 ___
 ## bandit 15
 
-```shell
-openssl s_client localhost:30001
+```bash
+openssl s_client localhost:30001 # pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7 then enter
 ```
 
 to initialize the connection
 then paste the previous pass and hit enter.
 
-pass: 
+pass: kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
 
 ___
 ## bandit 16
