@@ -34,7 +34,7 @@ pass: 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
 cd inhere
 cat '...Hiding-From-You'
 ```
-pass: 
+pass: xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
 
 ---
 ## Bandit 4
@@ -42,7 +42,7 @@ pass:
 ```shell
 cat ./-file07
 ```
-pass: 
+pass: 6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
 
 ___
 ## Bandit 5
