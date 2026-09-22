@@ -18,7 +18,7 @@ sudo pacman -Syuu
 ```
 (use this when there are warnings like: "pacman warning package local is newer than extra")
 
-### see packages that you explicitly installed (excluding base devel)
+### See packages that you explicitly installed (excluding base devel)
 ```bash
 pacman -Qei | awk '/^Name/ { name=$3 } /^Groups/ { if ( $3 != "base" && $3 != "base-devel" ) { print name } }'
 ```
