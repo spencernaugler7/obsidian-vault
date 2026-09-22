@@ -9,7 +9,7 @@ useradd -m -s /bin/bash roguetwo
 sudo passwd roguetwo # new pass: clear01
 ```
 
-
+___
 ## Package management
 
 ### Downgrade newer packages to the official versions in the repo. 
