@@ -1,45 +1,54 @@
-## Downgrade newer packages to the official versions in the repo. 
+## User Management
+### add user
+```bash
+useradd -m -s /bin/bash roguetwo
+```
+
+### change pass for new user
+```bash
+sudo passwd roguetwo # new pass: clear01
+```
+
+
+## Package management
+
+### Downgrade newer packages to the official versions in the repo. 
 ```bash
 sudo pacman -Syuu
 ```
 (use this when there are warnings like: "pacman warning package local is newer than extra")
 
-## add user
+### see packages that you explicitly installed (excluding base devel)
 ```bash
-useradd -m -s /bin/bash roguetwo
+pacman -Qei | awk '/^Name/ { name=$3 } /^Groups/ { if ( $3 != "base" && $3 != "base-devel" ) { print name } }'
 ```
 
-## change pass for new user
-```bash
-sudo passwd roguetwo # new pass: clear01
-```
-
-## Remove package and all dependancies
+### Remove package and all dependencies (unsafe and can result in breakage)
 ```bash
 pacman -Rns
 ```
 
-## Show information for installed packages and system health.
+### Show information for installed packages and system health.
 ```bash
 yay -Ps
 ```
 
-## Show available updates for packages installed from the AUR.
+### Show available updates.
 ```bash
-yay -Qau
+pacman -Qau
 ```
 
-## Update packages installed from the AUR.
+### Update packages installed from the AUR.
 ```bash
 yay -Sau
 ```
 
-## Update all system and installed packages.
+### Update all system and installed packages.
 ```bash
-yay -Syu or yay
+pacman -Syu
 ```
 
-## Update a single package.
+### Update a single package.
 ```bash
-yay -Sy <package>
+pacman -Sy <package>
 ```
