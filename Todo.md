@@ -1,3 +1,5 @@
 - [ ] Call gas company and cancel➕ 2026-08-29 📅 2026-08-31
 - [ ] do laundry
-- [ ] clean hosue
+- [ ] clean house
+- [ ] return wifi router
+- [ ] reset my bmv password
