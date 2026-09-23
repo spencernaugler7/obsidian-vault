@@ -173,7 +173,7 @@ ___
 ```shell
 diff passwords.old passwords.new
 ```
-pass: 
+pass: OQxXZjELndr90zuhOTDYBEomI0SZITXI
 
 ___
 ## bandit 18
@@ -182,21 +182,32 @@ ___
 ssh -p 2220 bandit18@bandit.labs.overthewire.org /bin/bash --norc
 cat readme
 ```
-pass: 
+pass: KpsOfPkcP7i1FlIExk2QEjyt6dw8dxZI
 
 ___
 ## bandit 19
 
 ```shell
-./bandit20-do cat /etc/bandit_pass/bandit20
+./bandit20-do -- cat /etc/bandit_pass/bandit20
 ```
-pass: 
+pass: 4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
 
 ___
 ## bandit 20
 
 ```shell
 
+```
+
+pass: 
+
+---
+
+## bandit 21
+
+```shell
+cd /etc/cron.d
+cat 0hourly
 ```
 
 pass: 
