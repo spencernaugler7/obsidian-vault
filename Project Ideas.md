@@ -31,7 +31,7 @@ ___
 ### Dependency docs
 - [pdfpig](https://github.com/UglyToad/PdfPig/wiki)
 - [webui frontend](https://webui.me/docs.html#/)
-  - [Csharp lib](https://github.com/salvadordf/WebUI4CSharp)
+- [Csharp lib](https://github.com/salvadordf/WebUI4CSharp)
 
 ___
 ## File include obsidian plugin
@@ -119,3 +119,7 @@ ___
 ___
 ## Create a service to make fake phone numbers.
 
+___
+## Amazon price tracker application.
+
+use qt bridge for c#
