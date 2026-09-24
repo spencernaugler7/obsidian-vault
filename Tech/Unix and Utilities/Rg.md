@@ -9,7 +9,10 @@ rg [OPTIONS] --help
 rg [OPTIONS] --version
 ```
 
-- `-e REGEX` 
+- `-e REGEX`
+- `-g GLOB,--glob=GLOB`
+	- match files that match glob
+	- prepend glob with `!` to exclude example: ` rg -g "*.cs" -g !"*.aspx.cs" DateTime.Now`
 - `-f PATTERNFILE`
 - `-s, --case-sensitive`
 - `-i, --ignore-case`
