@@ -139,7 +139,7 @@ ___
 ## bandit 15
 
 ```bash
-openssl s_client localhost:30001 # pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7 then enter
+openssl s_client localhost:30001 # after connect paste pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7 then enter
 ```
 
 to initialize the connection
@@ -157,7 +157,7 @@ nmap -sC -p 31000-32000 localhost
 Scan for open ports. Two of them have ssl/tls connections for connecting
 
 ```shell
-echo "kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx" | openssl s_client -connect localhost:31790 -quiet
+echo "kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V" | openssl s_client -connect localhost:31790 -quiet
 ```
 
 Initially tried the solution to bandit 15. connect to the server, paste the pass, hit enter. This would only result in a "keyupdate" message showing up in the output instead of the puzzle solution.
@@ -173,7 +173,7 @@ ___
 ```shell
 diff passwords.old passwords.new
 ```
-pass: 
+pass: OQxXZjELndr90zuhOTDYBEomI0SZITXI
 
 ___
 ## bandit 18
@@ -182,21 +182,32 @@ ___
 ssh -p 2220 bandit18@bandit.labs.overthewire.org /bin/bash --norc
 cat readme
 ```
-pass: 
+pass: KpsOfPkcP7i1FlIExk2QEjyt6dw8dxZI
 
 ___
 ## bandit 19
 
 ```shell
-./bandit20-do cat /etc/bandit_pass/bandit20
+./bandit20-do -- cat /etc/bandit_pass/bandit20
 ```
-pass: 
+pass: 4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA
 
 ___
 ## bandit 20
 
 ```shell
 
+```
+
+pass: 
+
+---
+
+## bandit 21
+
+```shell
+cd /etc/cron.d
+cat 0hourly
 ```
 
 pass: 

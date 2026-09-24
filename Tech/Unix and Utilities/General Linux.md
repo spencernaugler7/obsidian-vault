@@ -1,6 +1,7 @@
-## Permissions
+## File Permissions
 ```bash
-rw-r--r–
+ls -l
+# rw-r--r–
 ```
 
 This string is actually an expression of three different sets of permissions:

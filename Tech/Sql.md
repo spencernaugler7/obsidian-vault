@@ -2,13 +2,36 @@
 tags:
   - sql
 ---
-## Find tables with column name
-Tsql
+## Finding Stuff
+### Find tables with column name
 ```sql
 select t.name as TableName, c.name as ColumnName
 from sys.columns c
 inner join sys.tables t on t.object_id = c.object_id
 where c.name like '<table_name>'
+```
+### Search through stored procedures body text.
+```sql
+select object_name(p.object_id) "SP Name", 
+	object_definition(p.object_id )
+from sys.procedures p 
+where Object_definition(p.object_id) LIKE '%UPDATE%'
+```
+
+### Search through stored functions
+```sql
+SELECT OBJECT_NAME(OBJECT_ID) "View Name",
+	OBJECT_DEFINITION(OBJECT_ID) "View Text"
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE ROUTINE_DEFINITION LIKE '%blah%' AND ROUTINE_TYPE = 'FUNCTION'
+```
+
+### Search through stored views
+```sql
+SELECT OBJECT_NAME(OBJECT_ID) "View Name",
+	OBJECT_DEFINITION(OBJECT_ID) "View Text"
+FROM sys.views
+WHERE OBJECT_DEFINITION(OBJECT_ID) LIKE '%blah%'
 ```
 
 ## Special var's/functions
