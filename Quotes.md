@@ -4,3 +4,5 @@
 
 > People who ‘abjure’ violence can only do so because others are committing violence on their behalf. ^[https://chairestrategique.pantheonsorbonne.fr/themes/2019/why-america-us-role-european-defense-and-european-mind]
 
+> An idiot in motion will go further than a genius at rest. (unknown source)
+
