@@ -14,6 +14,10 @@
 - [keycloak](https://www.keycloak.org/)
 - [cloudflare tunnel](https://developers.cloudflare.com/tunnel/)
 - [quarkdown](https://quarkdown.com/)
+- [k6 load tester](https://k6.io/)
+- [git bug](https://github.com/git-bug/git-bug)
+- [treeepeat](https://github.com/dsummersl/treepeat)
+
 
 
 ### Explored
