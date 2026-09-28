@@ -1,10 +1,11 @@
 ### Git remove files/folders that are are already tracked but ignored
-`git rm -r --cached .` clear the whole cache (this will wipe out the physical directory files but keep the git files in tact.)
 ```shell
+git rm -r --cached <target> # wipe out file/folder from index (not working tree)
 git add .
 git commit -m "fix: stop tracking ignored files"
 ```
 tldr wipe out all the files and restore the entire file tree from git.
+
 ### Have git normalize line endings
 add `.gitattributes` file to repo directory with these contents
 ```
