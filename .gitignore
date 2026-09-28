@@ -34,3 +34,7 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+
+## each machine get's it's own personal todo
+Todo.md
