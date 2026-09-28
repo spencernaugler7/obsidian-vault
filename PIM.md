@@ -17,4 +17,5 @@ wants to be an english and french teacher
 she alters clothes.
 she paints
 she draws with a wacom tablet.
+she is 22
 
