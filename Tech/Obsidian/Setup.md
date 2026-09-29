@@ -3,13 +3,9 @@
 - [excalidraw](obsidian://show-plugin?id=obsidian-excalidraw-plugin)
 - [d2](obsidian://show-plugin?id=d2-obsidian)
 - [open in terminal](obsidian://show-plugin?id=open-in-terminal)
-- [calendar](obsidian://show-plugin?id=calendar)
-- [embed file](obsidian://show-plugin?id=file-include)
 - [tab settings](obsidian://show-plugin?id=open-tab-settings)
-- [file include](obsidian://show-plugin?id=file-include)
 - [auto split](obsidian://show-plugin?id=obsidian-auto-split)
-- [inline properties](obsidian://show-plugin?id=inline-properties)
-- [zen mode](obsidian://show-plugin?id=obsidian-prozen)
+- [embed metadata](obsidian://show-plugin?id=embed-metadata)
 - [obsidian tasks](obsidian://show-plugin?id=obsidian-tasks-plugin)
 
 ## Maybe use these plugins?
@@ -19,7 +15,6 @@
 - [day planner](obsidian://show-plugin?id=obsidian-day-planner)
 - [Full Calendar](obsidian://show-plugin?id=obsidian-full-calendar)
 - [text finder](obsidian://show-plugin?id=text-finder)
-
 
 ## Enable cli
 Settings -> General -> command line interface.
