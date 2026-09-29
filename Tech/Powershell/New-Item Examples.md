@@ -1,6 +1,6 @@
 ## Example 1: Create a file in the current directory
 This command creates a text file that is named "testfile1.txt" in the current directory. The dot
-('.') in the value of the **Path** parameter indicates the current directory. The quoted text that
+`.` in the value of the **Path** parameter indicates the current directory. The quoted text that
 follows the **Value** parameter is added to the file as content.
 
 ```powershell

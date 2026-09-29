@@ -1,6 +1,11 @@
 ---
 source: https://learn.microsoft.com/en-us/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.6
 ---
+## Declare variables
+```powershell
+$a = "Hello"
+$range = 1..10
+```
 ## Get All Drives On Computer
 ```powershell
 Get-PSDrive -PSProvider 'FileSystem'
