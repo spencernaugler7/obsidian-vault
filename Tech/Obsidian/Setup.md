@@ -18,6 +18,8 @@
 - [execute code](obsidian://show-plugin?id=execute-code)
 - [day planner](obsidian://show-plugin?id=obsidian-day-planner)
 - [Full Calendar](obsidian://show-plugin?id=obsidian-full-calendar)
+- [text finder](obsidian://show-plugin?id=text-finder)
+
 
 ## Enable cli
 Settings -> General -> command line interface.
