@@ -114,9 +114,6 @@ ___
 - attach to version control branch.
 
 ___
-## Cubeworld style game.
-
-___
 ## Create a service to make fake phone numbers.
 
 ___
