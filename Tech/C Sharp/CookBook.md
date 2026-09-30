@@ -21,7 +21,6 @@ var currentTime = DateTime.Now
 var dir = Directory.GetCurrentDirectory();
 //Console.WriteLine(dir);
 ```
-s
 
 ## Search for a text file in all subdirectories that ends with *.cs
 ```csharp
