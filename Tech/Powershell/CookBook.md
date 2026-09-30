@@ -67,3 +67,20 @@ Get-ChildItem .\test.txt | %{ $_.CreationTime, $_.LastWriteTime }
 # ------------- or ------------
 (Get-ChildItem .\test.txt).CreationTime
 ```
+
+## Write To A File
+```powershell
+Get-Process | Out-File -FilePath .\Process.txt
+Get-Content -Path .\Process.txt
+```
+
+## String Interpolation
+```powershell
+$name = "Smith"
+$message = "Hello, $name! Welcome to PowerShell."
+```
+
+## Select property in pipeline
+```powershell
+
+```

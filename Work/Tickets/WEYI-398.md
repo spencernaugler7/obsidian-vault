@@ -29,7 +29,9 @@ The purpose is to prevent old report files from accumulating and consuming unnec
 6. Cleanup failures are logged and can be investigated if necessary.
 7. The cleanup is limited to the specified `WEYIMgr\Report` directory.
 8. The cleanup process is verified in the target environment with both old and recent report files.
+
 # Questions
-1. Delete files where the CreateDate and LastWriteTime is greater than or equal to three days
-2. Where do I write log messages?
+1. Delete files where the `CreateDate` and `LastWriteTime` is greater than or equal to three days
+2. Target dir for reports. `C:\Work\WebSites\WEYIMobile\WEYIMgr\Report`
+3. Where do I write log messages?
 	1. We need the logs to be saved in a folder under the same path as the reports.
