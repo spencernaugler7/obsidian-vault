@@ -1,6 +1,7 @@
 Selects objects from a collection based on their property values.
 
 ## Example 1: Get stopped services
+
 These commands get a list of all services that are stopped. The `$_` automatic variable represents
 each object that's passed to the `Where-Object` cmdlet.
 
@@ -14,6 +15,7 @@ Get-Service | Where-Object Status -EQ "Stopped"
 ```
 
 ## Example 2: Get processes based on working set
+
 These commands list processes that have a working set greater than 250 megabytes (MB). The commands
 filter the processes the same way and return the same output. Only the syntax is different.
 
@@ -23,6 +25,7 @@ Get-Process | Where-Object WorkingSet -GT 250MB
 ```
 
 ## Example 3: Get processes based on process name
+
 These commands get the processes that have a **ProcessName** property value that begins with the
 letter `p`. The `-match` operator and **Match** parameter let you use regular expression matches.
 
@@ -35,6 +38,7 @@ Get-Process | Where-Object ProcessName -Match "^p.*"
 ```
 
 ## Example 4: Use the comparison statement format
+
 This example shows how to use the new comparison statement format of the `Where-Object` cmdlet.
 
 The first command uses the comparison statement format. It doesn't use any aliases and includes the
@@ -53,6 +57,7 @@ Get-Process | where Handles -GE 1000
 ```
 
 ## Example 5: Get commands based on properties
+
 This example shows how to write commands that return items that are true or false or have any value
 for a specified property. Each example shows both the scriptblock and comparison statement formats
 for the command.
@@ -85,9 +90,10 @@ Get-ChildItem | Where-Object { !$_.PSIsContainer }
 ```
 
 ## Example 6: Use multiple conditions
+
 ```powershell
 Get-Module -ListAvailable | Where-Object {
-	($_.Name -notlike "Microsoft*" -and $_.Name -notlike "PS*") -and $_.HelpInfoUri
+ ($_.Name -notlike "Microsoft*" -and $_.Name -notlike "PS*") -and $_.HelpInfoUri
 }
 ```
 

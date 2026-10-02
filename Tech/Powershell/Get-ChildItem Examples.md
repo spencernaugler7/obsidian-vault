@@ -1,5 +1,7 @@
-# Gets the items and child items in one or more specified locations.
+# Gets the items and child items in one or more specified locations
+
 ## Example 1: Get child items from a file system directory
+
 This example gets the child items from a file system directory. The filenames and subdirectory names
 are displayed. For empty locations (directories or folders), the command doesn't return any output
 and returns to the PowerShell prompt.
@@ -38,6 +40,7 @@ For more information about the mode flags, see
 [about_FileSystem_Provider](../Microsoft.PowerShell.Core/About/about_FileSystem_Provider.md#attributes-flagsexpression).
 
 ## Example 2: Get child item names in a directory
+
 This example lists only the names of items in a directory.
 
 The `Get-ChildItem` cmdlet uses the **Path** parameter to specify the directory `C:\Test`. The
@@ -57,6 +60,7 @@ ReadOnlyFile.txt
 ```
 
 ## Example 3: Get child items in the current directory and subdirectories
+
 This example displays `.txt` files that are located in the current directory and its
 subdirectories.
 
@@ -65,7 +69,7 @@ Get-ChildItem -Path .\*.txt -Recurse -Force
 ```
 
 ```
-	Directory: C:\Test\Logs\Adirectory
+ Directory: C:\Test\Logs\Adirectory
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -105,6 +109,7 @@ headings. The **Force** parameter displays hidden files such as `hiddenfile.txt`
 **h**.
 
 ## Example 4: Get child items using the Include parameter
+
 In this example `Get-ChildItem` uses the **Include** parameter to find specific items from the
 directory specified by the **Path** parameter.
 
@@ -119,7 +124,7 @@ Get-ChildItem -Path C:\Test\* -Include *.txt
 ```
 
 ```
-	Directory: C:\Test
+ Directory: C:\Test
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -143,6 +148,7 @@ wildcard to specify the directory's contents. For example, `-Path C:\Test\*`.
   any output and returns to the PowerShell prompt. For example, `-Path C:\Test\`.
 
 ## Example 5: Get child items using the Exclude parameter
+
 The example's output shows the contents of the directory `C:\Test\Logs`. The output is a reference
 for the other commands that use the **Exclude** and **Recurse** parameters.
 
@@ -151,7 +157,7 @@ Get-ChildItem -Path C:\Test\Logs
 ```
 
 ```Output
-	Directory: C:\Test\Logs
+ Directory: C:\Test\Logs
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -168,7 +174,7 @@ Get-ChildItem -Path C:\Test\Logs\* -Exclude A*
 ```
 
 ```Output
-	Directory: C:\Test\Logs
+ Directory: C:\Test\Logs
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -194,6 +200,7 @@ optional. For example, `-Path C:\Test\Logs` or `-Path C:\Test\Logs\*`.
   not the **Path** parameter includes a trailing asterisk (`*`).
 
 ## Example 6: Get the registry keys from a registry hive
+
 This example gets all the registry keys from `HKEY_LOCAL_MACHINE\HARDWARE`.
 
 `Get-ChildItem` uses the **Path** parameter to specify the registry key `HKLM:\HARDWARE`. The hive's
@@ -207,7 +214,7 @@ Get-ChildItem -Path HKLM:\HARDWARE
 ```
 
 ```Output
-	Hive: HKEY_LOCAL_MACHINE\HARDWARE
+ Hive: HKEY_LOCAL_MACHINE\HARDWARE
 
 Name             Property
 ----             --------
@@ -236,6 +243,7 @@ tells `Get-ChildItem` not to return any subkeys that start with `D*`. Currently,
 parameter only works on subkeys, not item properties.
 
 ## Example 7: Get all certificates with code-signing authority
+
 This example gets each certificate in the PowerShell `Cert:` drive that has code-signing authority.
 
 The `Get-ChildItem` cmdlet uses the **Path** parameter to specify the Certificate provider with the
@@ -251,6 +259,7 @@ For more information about the Certificate provider and the `Cert:` drive, see
 [about_Certificate_Provider](../Microsoft.PowerShell.Security/About/about_Certificate_Provider.md).
 
 ## Example 8: Get items using the Depth parameter
+
 This example displays the items in a directory and its subdirectories. The **Depth** parameter
 determines the number of subdirectory levels to include in the recursion. Empty directories are
 excluded from the output.
@@ -260,7 +269,7 @@ Get-ChildItem -Path C:\Parent -Depth 2
 ```
 
 ```Output
-	Directory: C:\Parent
+ Directory: C:\Parent
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -287,6 +296,7 @@ parameter specifies two levels of recursion. `Get-ChildItem` displays the conten
 specified by the **Path** parameter and the two levels of subdirectories.
 
 ## Example 9: Getting hard link information
+
 In PowerShell 6.2, an alternate view was added to get hard link information.
 
 ```powershell
@@ -294,6 +304,7 @@ Get-ChildItem -Path C:\PathContainingHardLink | Format-Table -View childrenWithH
 ```
 
 ## Example 10: Output for Non-Windows Operating Systems
+
 In PowerShell 7.1 on Unix systems, the `Get-ChildItem` provides Unix-like output:
 
 ```powershell
@@ -301,7 +312,7 @@ PS> Get-ChildItem /etc/r*
 ```
 
 ```Output
-	Directory: /etc
+ Directory: /etc
 
 UnixMode   User Group    LastWriteTime Size Name
 --------   ---- -----    ------------- ---- ----
@@ -328,6 +339,7 @@ The new properties that are now part of the output are:
 > This feature was moved from experimental to mainstream in PowerShell 7.1.
 
 ## Example 11: Get the link target for a junction point
+
 The `dir` command in the Windows Command Shell shows the target location of a filesystem junction
 point. In PowerShell, this information is available from the **LinkTarget** property of the
 filesystem object returned by `Get-ChildItem` and is displayed in the default output.
@@ -350,12 +362,13 @@ l----   12/16/2021  9:29 AM           tmp -> C:\Users\user1\AppData\Local\Temp
 ```
 
 ## Example 12: Get the link target for an AppX reparse point
+
 This example attempts to get the target information for an AppX reparse point. Microsoft Store
 applications create AppX reparse points in the user's AppData directory.
 
 ```powershell
 Get-ChildItem ~\AppData\Local\Microsoft\WindowsApps\MicrosoftEdge.exe |
-	Select-Object Mode, LinkTarget, LinkType, Name
+ Select-Object Mode, LinkTarget, LinkType, Name
 ```
 
 ```Output
@@ -368,6 +381,7 @@ At this time, Windows doesn't provide a way to get the target information for an
 The **LinkTarget** and **LinkType** properties of the filesystem object are empty.
 
 ## Example 13: Use a filter to get only log files in a directory
+
 ```powershell
 # Returns only .log files in C:\Test (filtering is performed by the FileSystem provider)
 Get-ChildItem -Path C:\Test -Filter '*.log'
