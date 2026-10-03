@@ -1,8 +1,5 @@
 ### Projects to check out.
-- [Hyper Markdown](https://hyper-markdown.org/)
 - [light phone](https://www.thelightphone.com/)
-- [Xonsh](https://xon.sh/)
-- [Nushell](https://www.nushell.sh/)
 - [Yolk](https://elkowar.github.io/yolk/)
 - [HyperView](https://hyperview.org/)
 - [RecEnroll](https://reqnroll.net/) bdd test framework.
@@ -18,7 +15,13 @@
 - [git bug](https://github.com/git-bug/git-bug)
 - [treeepeat](https://github.com/dsummersl/treepeat)
 
+### Frameworks to check out
 
+
+### Languages to check out
+- [Xonsh](https://xon.sh/)
+- [Nushell](https://www.nushell.sh/)
+- [Hyper Markdown](https://hyper-markdown.org/)
 
 ### Explored
 - [rust desk](https://rustdesk.com/docs/en/)
