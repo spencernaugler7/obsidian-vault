@@ -1,5 +1,10 @@
 ---
 source: https://devhints.io/go
+tags:
+  - golang
+  - tech
+  - programming
+  - clippings
 ---
 # Basic Declarations
 
