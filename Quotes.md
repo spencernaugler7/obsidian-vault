@@ -7,3 +7,5 @@
 > An idiot in motion will go further than a genius at rest. but the idiot can move backwards (unknown source)
 
 > The military is a logistics company that dabbles in warfare ^[https://www.youtube.com/@RyanMcBethProgramming]
+
+> You can't overbless the meek
