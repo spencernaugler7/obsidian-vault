@@ -72,7 +72,7 @@ Get-CimInstance -ClassName Win32_LogicalDisk -Filter "DriveType=3"
 Get-CimInstance -ClassName Win32_LocalTime
 ```
 
-## Select Property From Child Item
+## Select Property on File
 
 ```powershell
 Get-ChildItem $targetDir | ForEach-Object { @($_.CreationTime, $_.LastWriteTime) }
