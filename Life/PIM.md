@@ -34,5 +34,6 @@ Hazel (why is she named that?)
 	- norway
 	- portugal
 	- turkie
+- she get's sick easily.
 
 going to malta soon
