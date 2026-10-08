@@ -14,6 +14,7 @@
 - [k6 load tester](https://k6.io/)
 - [git bug](https://github.com/git-bug/git-bug)
 - [treeepeat](https://github.com/dsummersl/treepeat)
+- [neovim guide](https://vonheikemen.github.io/learn-nvim/)
 
 ### Frameworks to check out
 
