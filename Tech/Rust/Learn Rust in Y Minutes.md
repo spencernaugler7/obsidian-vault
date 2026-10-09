@@ -25,6 +25,7 @@ On May 15th 2015, Rust 1.0 was released with a complete guarantee of backward co
 Although Rust is a relatively low-level language, it has some functional concepts that are generally found in higher-level languages. This makes Rust not only fast, but also easy and efficient to code in.
 
 ```rust
+
 // This is a comment. Line comments look like this...
 // and extend multiple lines like this.
 
@@ -37,11 +38,11 @@ Although Rust is a relatively low-level language, it has some functional concept
 /// '''
 /// let five = 5
 /// '''
+```
 
-///////////////
-// 1. Basics //
-///////////////
+### Basics
 
+```rust
 #[allow(dead_code)]
 // Functions
 // 'i32' is the type for 32-bit signed integers

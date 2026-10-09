@@ -10,7 +10,7 @@ tags:
   - ai
   - politics
 ---
-[![](https://www.justfacts.com/images/header/Just-Facts-logo_transparent-background%20v2.png)](https://www.justfacts.com/)
+[![0](https://www.justfacts.com/images/header/Just-Facts-logo_transparent-background%20v2.png)](https://www.justfacts.com/)
 
 [![](https://www.justfacts.com/images/header/Just-Facts-logo_transparent-background%20v2.png)](https://www.justfacts.com/)
 
