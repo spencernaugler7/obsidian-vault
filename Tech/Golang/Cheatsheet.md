@@ -89,6 +89,29 @@ slice := []byte("Hello")
 
 Slices have a dynamic size, unlike arrays.
 
+
+### Maps
+
+```go
+mapVar := make(map[string]int)
+mapVar["route"] = 66
+blah := mapVar["route"]
+delete(mapVar, "route")
+
+routeName, ok := mapVar["route"] // check existance
+
+for key, value := range mapVar { // iterate over map
+	fmt.Println("Key:", key, "Value:", value)
+}
+
+commits := map[string]int { // map literal
+    "rsc": 3711,
+    "r":   2138,
+    "gri": 1908,
+    "adg": 912,
+}
+```
+
 ### Pointers
 
 ```go
