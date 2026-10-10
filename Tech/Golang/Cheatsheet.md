@@ -115,6 +115,15 @@ commits := map[string]int { // map literal
 ### Pointers
 
 ```go
+x := 10
+var p *int = &x
+fmt.Println(p) // 0x158725226118
+fmt.Println(*p) // read through the pointer: 10
+*p = 20 // write through the pointer
+fmt.Println(x) // x changed: 20
+```
+
+```go
 func main () {
   b := *getPointer()
   fmt.Println("Value is", b)
@@ -126,11 +135,6 @@ func getPointer () (myPointer *int) {
   a := 234
   return &a
 }
-```
-
-```go
-a := new(int)
-*a = 234
 ```
 
 Pointers point to a memory location of a variable. Go is fully garbage-collected.
