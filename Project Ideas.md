@@ -52,9 +52,9 @@ ___
 
 Want to use this to edit config files from multiple sources from one easy place: obsidian.
 
-- Make an obsidian plugin that can embed a file in a markdown note from any directory on the filesystem.
-- We can also signify a line number range or several ranges to embed the file.
-- We can also edit this file directly from the markdown note.
+- [ ] Make an obsidian plugin that can embed a file in a markdown note from any directory on the filesystem.
+- [ ] We can also signify a line number range or several ranges to embed the file.
+- [ ] We can also edit this file directly from the markdown note.
 
 ___
 
@@ -71,7 +71,7 @@ Plans for features.
 
 ___
 
-## Expand/Collapse all headings Obsidian plugin
+## Expand/Collapse all headings Obsidian shortcut plugin
 
 Add the ability to expand/collapse all headers in the current note.
 Ways to run
@@ -131,24 +131,24 @@ ___
 
 ### Features
 
-- title, markdown description, date created,
-- bug status
-- related bugs
-- labels
-- assignee
-- severity
+- [ ] title, markdown description, date created,
+- [ ] bug status
+- [ ] related bugs
+- [ ] labels
+- [ ] assignee
+- [ ] severity
 
-### ideal constraints
+### Ideal constraints
 
 - self contained binary, should be easily deployable and hostable.
 
-### advanced features
+### Advanced features
 
-- kanban board.
-- duplicate issuse.
-- attachments.
-- comments/discussion
-- attach to version control branch.
+- [ ] kanban board.
+- [ ] duplicate issuse.
+- [ ] attachments.
+- [ ] comments/discussion
+- [ ] attach to version control branch.
 
 ___
 
@@ -167,10 +167,13 @@ ___
 
 ### Features
 
-- you can fork a gist.
-- can star gists for later
-- public profile lists starred gists
-- can see the revisions
-	- should show up in a nice diffviewer (perhaps use difftastic to view it?)
-- want an animated cursor. (perhaps use monaco for the editor)
-- other users can leave inline comments in a gist.
+- [ ] you can fork a gist.
+- [ ] can star gists for later
+- [ ] public profile lists starred gists
+- [ ] can see the revisions
+	- [ ] should show up in a nice diffviewer (perhaps use difftastic to view it?)
+- [ ] want an animated cursor. (perhaps use monaco for the editor)
+- [ ] other users can leave inline comments in a gist.
+
+___
+
