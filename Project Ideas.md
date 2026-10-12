@@ -157,5 +157,20 @@ ___
 ___
 
 use qt bridge for c#
+
 ___
 ## Custom Database in go
+
+___
+
+## Gist snippet service/pastebin
+
+### Features
+
+- you can fork a gist.
+- can star gists for later
+- public profile lists starred gists
+- can see the revisions
+	- should show up in a nice diffviewer (perhaps use difftastic to view it?)
+- want an animated cursor. (perhaps use monaco for the editor)
+- other users can leave inline comments in a gist.
