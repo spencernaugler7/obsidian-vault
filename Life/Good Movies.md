@@ -1,12 +1,16 @@
 ## To Watch
+
 - Hereditary
 - The Truman Show
 
 ## Watching
-Edgerunners: [current ep](https://aniwaves.ru/watch/cyberpunk-edgerunners-80125/ep-5)
-The wire
-Dark
+
+- Edgerunners: [current ep](https://aniwaves.ru/watch/cyberpunk-edgerunners-80125/ep-5)
+- The wire
+- Dark
+- The Fountain
 ## Watched
+
 - Oculus
 - Knives Out
 - Blazzing Saddles
