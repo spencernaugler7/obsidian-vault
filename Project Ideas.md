@@ -156,7 +156,7 @@ ___
 
 ___
 
-use qt bridge for c#
+## Use qt bridge for c
 
 ___
 ## Custom Database in go
@@ -177,3 +177,10 @@ ___
 
 ___
 
+## Url Shortener
+
+- [ ] table 
+	- [ ] id
+	- [ ] short url
+	- [ ] long url
+- [ ] 
