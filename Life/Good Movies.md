@@ -2,6 +2,7 @@
 
 - Hereditary
 - The Truman Show
+- Eyes Wide Shut
 
 ## Watching
 
