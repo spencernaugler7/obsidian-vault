@@ -186,7 +186,9 @@ ___
 
 ___
 
-## Constraint programming problems with googles or tools or other constraint solver equivalents.
+## Constraint programming problems 
 
+- [go library](https://www.gonum.org/)
+- Use with googles or tools or other constraint solver equivalents.
 - [bin packing problem](https://en.wikipedia.org/wiki/Bin_packing_problem)
 - [napsack problem](https://en.wikipedia.org/wiki/Knapsack_problem)
