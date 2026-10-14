@@ -87,7 +87,7 @@ ___
 
 ## Interesting phrase thesaurus
 
-want a site where we list a common saying and we find intresting way to say the same thing. Urban dictionary for thesurusing.
+Want a site where we list a common saying and we find interesting way to say the same thing. Urban dictionary for thesurusing.
 
 > [!Example]
 > `Not enough content` -> `Too little butter spread across to little bread`
@@ -121,12 +121,6 @@ Basically a contact list
 
 ___
 
-## interpol.cc clone
-
-basically tiktok.
-
-___
-
 ## Issue Tracker
 
 ### Features
@@ -153,10 +147,6 @@ ___
 ___
 
 ## Create a service to make fake phone numbers
-
-___
-
-## Use qt bridge for c
 
 ___
 ## Custom Database in go
