@@ -49,6 +49,7 @@ WHERE OBJECT_DEFINITION(OBJECT_ID) LIKE '%blah%'
 - [add job to server](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-add-jobserver-transact-sql?view=sql-server-ver17)
 
 ## Insert
+
 ```sql
 INSERT INTO Production.UnitMeasure  
 VALUES 
@@ -58,6 +59,7 @@ VALUES
 ```
 
 ## Insert With Select
+
 ```sql
 INSERT INTO dbo.EmployeeSales 
 SELECT 'SELECT', sp.BusinessEntityID, c.LastName, sp.SalesYTD 
@@ -160,4 +162,15 @@ EXEC my_stored_procedure @param1 = 'param1Value', @myoutput = @MyOutputParameter
 
 -- see output
 select @MyOutputParameter
+```
+
+## Declare temporary Tables
+
+```sql
+DECLARE @Tbl_CallInUser as table
+(
+	RequestId int,
+	ClientUserId int,
+	UserName nvarchar(256)
+)
 ```
