@@ -187,3 +187,8 @@ ___
 
 ## Site to share funny sayings in different languages.
 
+___
+
+## Remote Desktop application with peer to peer capabilities
+
+Use iroh as the transfer protocol. In theory this should work in terrible networks.
