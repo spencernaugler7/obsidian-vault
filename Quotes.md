@@ -14,3 +14,5 @@
 > 
 > *[Yasutani](https://en.wikipedia.org/wiki/Hakuun_Yasutani "Hakuun Yasutani")*: First of all, you must be convinced you can do so. The conviction creates determination, and the determination zeal. But if you lack conviction, if you think “maybe I can get it, maybe I can’t”, or even worse, “This is beyond me!”—you won’t awaken no matter how much you do zazen.^[pg126, *[The 3 Pillars of Zen](https://en.wikipedia.org/wiki/The_3_Pillars_of_Zen "The 3 Pillars of Zen")*, ISBN 8070-5979-7]
 
+> Technical leadership is the art of ignoring ^[[this video](https://www.youtube.com/watch?v=WqSWZuGS9pc) from [olevsolevs](https://www.youtube.com/@olevsolevs157)]
+
