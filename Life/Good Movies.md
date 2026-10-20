@@ -6,7 +6,7 @@
 
 ## Watching
 
-- [kakegurui](https://anichan.to/anime/98314/kakegurui/5)
+- [kakegurui](https://anichan.to/anime/98314/kakegurui/8)
 - Edgerunners: [current ep](https://aniwaves.ru/watch/cyberpunk-edgerunners-80125/ep-5)
 - The wire
 - Dark
