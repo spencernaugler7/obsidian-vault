@@ -7,7 +7,7 @@
 ## Watching
 
 - [kakegurui](https://anichan.to/anime/98314/kakegurui/8)
-- Edgerunners: [current ep](https://aniwaves.ru/watch/cyberpunk-edgerunners-80125/ep-5)
+- [Edgerunners season 2](https://anichan.to/anime/195539/cyberpunk-edgerunners-2/1)
 - The wire
 - Dark
 - The Fountain
