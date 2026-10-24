@@ -1,5 +1,6 @@
 ## Summary
 ```bash
+fd [pattern [path...]]
 -t, --type filetype
    f, fileregular files  
    d, dir, directory  
