@@ -16,3 +16,5 @@
 
 > Technical leadership is the art of ignoring ^[[this video](https://www.youtube.com/watch?v=WqSWZuGS9pc) from [olevsolevs](https://www.youtube.com/@olevsolevs157)]
 
+> I have come to suspect that to most people thinking is painful. Some of us are addicted to thinking. Some of us find it a necessity. Johnny enjoyed it. I even have the suspicion that he enjoyed almost nothing else.
+> -- Edward Teller, eulogizing John von Neumann
