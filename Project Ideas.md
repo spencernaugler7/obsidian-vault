@@ -185,7 +185,22 @@ ___
 
 ___
 
-## Site to share funny sayings in different languages.
+## Worldchan fun site.
+
+- page to share funny sayings in different languages.
+	- random saying of the day on site homepage.
+- mutiplayer pvp block blast page.
+	- use [pixi js](https://pixijs.com/)
+	- players join lobby like blazing 8's
+	- need at least two players to start a round
+	- Each player has three lives.
+	- when someone dies they go back to the lobby for the next round.
+	- round ends when only one player is left alive.
+	- Powerups spawn. If you shoot a marble at it and hit it you collect the powerup.
+		- multishot
+		- double shot speed
+		- double wide paddle.
+
 
 ___
 

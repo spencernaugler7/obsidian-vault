@@ -1,3 +1,11 @@
+### Sites to check out
+
+- https://harmful.cat-v.org/
+- https://www.worldpackers.com/
+- https://www.couchsurfing.com/
+- https://thingstodoapi.com/
+- https://nomagicpill.site/
+
 ### Uncategorized
 
 - [Yolk](https://elkowar.github.io/yolk/) dotfiles manager
@@ -24,12 +32,6 @@
 - [Nushell](https://www.nushell.sh/)
 - [Hyper Markdown](https://hyper-markdown.org/)
 - [Quarkdown](https://quarkdown.com/)
-
-### Sites to check out
-
-- https://harmful.cat-v.org/
-- https://www.worldpackers.com/
-- https://www.couchsurfing.com/
 
 ### Tools to check out
 
