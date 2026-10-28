@@ -12,6 +12,11 @@
 - **LSP** = Voyce: Language service provider (intpreter)
 	- any company that offers interpretation services.
 	- Called `Agent` in Martti platform.
+- **MRN** = Medical Record Number
+	- Used to keep track of one mission
+	- mission is the whole process when they enter a hospital to when they exit the hospital.
+- **CSN** = Encounter Identifier for a hospital.
+	- literally any interaction with the hospital with potential patients.
 - **Task** = Language service provider task. LSP's are assigned tasks through the system. Maps to a single translation
 - **Outsource** = We want martti to handle most translation requests now. outsource is the process where we do the translation service bit in martti and mirror the data over to voyce's systems. [[Outsource#Outsource request process.| Outsource process overview]]
 ## Jira
