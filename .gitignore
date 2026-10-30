@@ -38,3 +38,6 @@ Temporary Items
 
 ## each machine get's it's own personal todo
 Todo.md
+
+## ignore Excalidraw that is created by an obsidian plugin.
+/Excalidraw
