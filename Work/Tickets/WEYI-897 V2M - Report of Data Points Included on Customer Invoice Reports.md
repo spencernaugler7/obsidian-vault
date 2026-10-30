@@ -22,3 +22,10 @@ Create a report showing **all data points included on each customer’s invoice*
 ##### Xiang Xu
 
 `sp_InvoiceRpt_Hospital_Secure` In this stored procedure, take a look at each specific condition with CompanyCode and summarize what action we did for each customized customer.  
+
+# Todo
+
+1. review Xtend data
+2. what happen to inputs 1-15 before the large company code condition fires?
+	1. start with input 1-15
+	2. 
