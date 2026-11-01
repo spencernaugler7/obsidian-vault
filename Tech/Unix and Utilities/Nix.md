@@ -27,5 +27,11 @@ nix-env --profile /nix/var/nix/profiles/system --delete-generations old
 sudo nixos-rebuild switch --upgrade-all
 ```
 
+##### System update
+
+```bash
+nix-channel --update && nixos-rebuild switch && reboot
+```
+
 ## Config options
 

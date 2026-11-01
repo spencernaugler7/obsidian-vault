@@ -686,18 +686,7 @@ otherwise, T1 is executed. Dot is unaffected.
 ```
 
 To simplify the appearance of if-else chains, the else action
-of an if may include another if directly; the effect is exactly
-the same as writing
-
-```go
-{{if pipeline}} 
-	T1 
-{{else}}
-{{if pipeline}} 
-	T0 
-	{{end}}
-{{end}}
-```
+of an if may include another if directly.
 
 ```go
 {{range pipeline}} 
@@ -727,12 +716,16 @@ If the value of the pipeline has length zero, dot is unaffected and
 T0 is executed; otherwise, dot is set to the successive elements
 of the array, slice, or map and T1 is executed.
 
-`{{break}}`
+```go 
+{{break}}
+```
 
 The innermost {{range pipeline}} loop is ended early, stopping the
 current iteration and bypassing all remaining iterations.
 
-`{{continue}}`
+```go
+{{continue}}
+```
 
 The current iteration of the innermost {{range pipeline}} loop is
 stopped, and the loop starts the next iteration.
@@ -795,7 +788,4 @@ and T1 is executed.
 	
 To simplify the appearance of with-else chains, the else action
 of a with may include another with directly; the effect is exactly
-the same as writing
-	`{{with pipeline}} T1 {{else}}{{with pipeline}} T0 {{end}}{{end}}`
-
-### 
+the same as writing:
