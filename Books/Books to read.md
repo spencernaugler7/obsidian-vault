@@ -17,3 +17,5 @@ Random
 - [hypermedia book](https://hypermedia.systems/book/contents/)
 - [principa softwarica](https://principia-softwarica.org/)
 - [metapatterns](https://metapatterns.io/)
+
+[hackernews book site](https://hackerbooks.org/)
