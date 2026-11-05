@@ -46,9 +46,10 @@ The SQS publishing task should only be decommissioned after VIP has fully migrat
 
 ## Todo
 
-1. new column on TableLiveUpdate1-15 SyncedCDC
-2. new service
-	1. get top 300 records from non-cdcsynced records
+1. New columns on TableLiveUpdate1-20 `SyncedCDC`
+2. make new stored proc `sp_KafkaLiveUpdate` that is the same as `sp_TableLiveUpdateNeedToPush` but checks `CDCSynced` flag instead, structure returned json so we just have single rows instead of one large json blob
+3. create Kafka client using dekaf library. push out each table row as a single Kafka event.
+	1. topic format is like this: `voyce.<TableName>`
 
 ## Processes
 
