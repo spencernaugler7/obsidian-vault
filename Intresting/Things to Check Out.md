@@ -5,6 +5,7 @@
 - https://www.couchsurfing.com/
 - https://thingstodoapi.com/
 - https://nomagicpill.site/
+- https://pwn.college/
 
 ### Uncategorized
 
