@@ -42,16 +42,8 @@ The SQS publishing task should only be decommissioned after VIP has fully migrat
 	1. single reporting source
 3. what is databricks?
 4. we already use a push notification service. Via firebase cloud messaging. Why do we also have an sqs message queue?
-5. 
 
-## Todo
-
-1. New columns on TableLiveUpdate1-20 `SyncedCDC`
-2. make new stored proc `sp_KafkaLiveUpdate` that is the same as `sp_TableLiveUpdateNeedToPush` but checks `CDCSynced` flag instead, structure returned json so we just have single rows instead of one large json blob
-3. create Kafka client using dekaf library. push out each table row as a single Kafka event.
-	1. topic format is like this: `voyce.<TableName>`
-
-## Processes
+## Current Processes
 
 TableTrigger
 1. is insert or update 
@@ -129,3 +121,12 @@ Backup process
 1. tables that should be synced have a particular trigger: `tiud_<TableName>`. This trigger execs `sp_TableLiveUpdateInsert` on insertion of a record or an update of a record.
 2. `sp_TableLiveUpdateInsert` takes new record data
 
+## Todo
+
+1. Add new timers to sync projects that send the sqs/kafka events. new timers trigger kafka pushes.
+2. New columns on TableLiveUpdate1-20 `SyncedCDC`
+3. `sp_TableLiveUpdateNeedToPush`  add flag to parameters that decides to check the `Synced` or the `CDCSynced` flag. 
+4. Structure returned json so we just have single rows instead of one large json blob
+5. `sp_TableLiveUpdatePushFinish` add flag to parameters to decide whether to update the `Synced` flag or the `CDCSynced` flag.
+6. create Kafka client using dekaf library. push out each table row as a single Kafka event.
+	1. topic format is like this: `voyce.<TableName>`
