@@ -70,7 +70,7 @@ ORDER BY sp.BusinessEntityID, c.LastName;
 
 ## Declare Function
 functions can be scalar valued (returns a single value), or table valued (returns a table)
-###### scalar value
+###### Scalar Value
 ```sql
 CREATE FUNCTION CtrAmount ( @Ctr_Id int(10) )
   RETURNS MONEY
@@ -84,7 +84,7 @@ CREATE FUNCTION CtrAmount ( @Ctr_Id int(10) )
   END
 GO 
 ```
-###### table valued
+###### Table Valued
 ```sql
 CREATE FUNCTION function_name (@PRODUCT_ID Int)
   RETURNS @ProductsList Table

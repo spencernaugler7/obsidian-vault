@@ -636,12 +636,13 @@ ___
 
 # Go Text Templates
 
-### template blocks
+### Template blocks
 
 ```go
 {{/* a comment */}}
 {{- /* a comment with white space trimmed from preceding and following text */ -}}
 ```
+
 A comment; discarded. May contain newlines.
 Comments do not nest and must start and end at the
 delimiters, as shown here.
@@ -720,7 +721,7 @@ of the array, slice, or map and T1 is executed.
 {{break}}
 ```
 
-The innermost {{range pipeline}} loop is ended early, stopping the
+The innermost `{{range pipeline}}` loop is ended early, stopping the
 current iteration and bypassing all remaining iterations.
 
 ```go
@@ -748,7 +749,7 @@ to the value of the pipeline.
 	T1 
 {{end}} 
 ```
-	
+
 A block is shorthand for defining a template
 `{{define "name"}} T1 {{end}}`
 and then executing it in place
@@ -761,7 +762,7 @@ then customized by redefining the block templates within.
 	T1 
 {{end}}
 ```
-	
+
 If the value of the pipeline is empty, no output is generated;
 otherwise, dot is set to the value of the pipeline and T1 is
 executed.
@@ -785,7 +786,7 @@ and T1 is executed.
 	T0 
 {{end}}
 ```
-	
+
 To simplify the appearance of with-else chains, the else action
 of a with may include another with directly; the effect is exactly
 the same as writing:

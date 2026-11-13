@@ -15,7 +15,7 @@ HTML has been gobbling up swathes of what used to be JavaScript’s remit. This 
 
 ---
 
-## \<dialog>
+## Dialog
 
 Available since March 2022
 - Chrome 37+
@@ -44,7 +44,7 @@ Opened and closed entirely with `command` and `commandfor` HTML attributes that 
 
 ---
 
-## popover
+## Popover
 
 Available since January 2025
 - Chrome 114+
@@ -71,7 +71,7 @@ Same deal as the \<dialog> above: no JS, just HTML attributes!
 ```
 
 ---
-## Grouped \<details>
+## Grouped `<details>`
 
 Available since September 2025
 - Chrome 120+
@@ -159,7 +159,7 @@ Colour, range, and date pickers, built right into the browser.
 
 ---
 
-## \<datalist>
+## datalist
 
 Available since March 2019
 - Chrome 20+
