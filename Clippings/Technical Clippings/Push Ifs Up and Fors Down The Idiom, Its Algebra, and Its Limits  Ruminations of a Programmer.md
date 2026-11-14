@@ -10,8 +10,6 @@ tags:
 ---
 ## Push Ifs Up and Fors Down: The Idiom, Its Algebra, and Its Limits
 
-## Push Ifs Up and Fors Down: The Idiom, Its Algebra, and Its Limits
-
 ## Introduction
 
 One of the recommendations from the [Tiger Style document](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md) of TigerBeetle..
