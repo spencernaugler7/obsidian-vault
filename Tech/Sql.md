@@ -3,13 +3,16 @@ tags:
   - sql
 ---
 ## Finding Stuff
+
 ### Find tables with column name
+
 ```sql
 select t.name as TableName, c.name as ColumnName
 from sys.columns c
 inner join sys.tables t on t.object_id = c.object_id
 where c.name like '<table_name>'
 ```
+
 ### Search through stored procedures body text.
 ```sql
 select object_name(p.object_id) "SP Name", 
@@ -70,7 +73,9 @@ ORDER BY sp.BusinessEntityID, c.LastName;
 
 ## Declare Function
 functions can be scalar valued (returns a single value), or table valued (returns a table)
+
 ###### Scalar Value
+
 ```sql
 CREATE FUNCTION CtrAmount ( @Ctr_Id int(10) )
   RETURNS MONEY
@@ -84,7 +89,9 @@ CREATE FUNCTION CtrAmount ( @Ctr_Id int(10) )
   END
 GO 
 ```
+
 ###### Table Valued
+
 ```sql
 CREATE FUNCTION function_name (@PRODUCT_ID Int)
   RETURNS @ProductsList Table
@@ -110,19 +117,24 @@ AS
   END
 GO
 ```
+
 ## Execute function
 ###### scalar valued
+
 ```sql
 declare @languageId int = 0
 exec @languageId = sfn_GetLanguageById @RequestId = 4
 select @languageId
 ```
+
 ###### table valued
+
 ```sql
 select * from tfn_RequestNeedToCreateCernerDoc()
 ```
 
 ## Declare stored procedure
+
 ```sql
 CREATE PROCEDURE SalesLT.uspGetCustomerCompany
 (
@@ -150,6 +162,7 @@ GO
 ```
 
 ## Execute stored procedure
+
 ```sql
 -- declare the output variable
 DECLARE @MyOutputParameter INT;
