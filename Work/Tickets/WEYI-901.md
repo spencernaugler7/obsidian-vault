@@ -3,9 +3,7 @@ summary:
 created: 2026-11-24
 source: https://cloudbreak.atlassian.net/browse/WEYI-901
 ---
-# Title
-
-Voyce API: Expose Transaction Transfer and Routing History
+# Voyce API: Expose Transaction Transfer and Routing History
 
 ## Description
 
