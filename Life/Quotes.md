@@ -17,4 +17,7 @@
 > Technical leadership is the art of ignoring ^[[this video](https://www.youtube.com/watch?v=WqSWZuGS9pc) from [olevsolevs](https://www.youtube.com/@olevsolevs157)]
 
 > I have come to suspect that to most people thinking is painful. Some of us are addicted to thinking. Some of us find it a necessity. Johnny enjoyed it. I even have the suspicion that he enjoyed almost nothing else.
-> -- Edward Teller, eulogizing John von Neumann
+> - Edward Teller, eulogizing John von Neumann
+
+> It is the capacity for maintenance which is the best test for the vigor and stamina of a society. Any society can be galvanized for a while to build something, but the will and the skill to keep things in good repair day in, day out are fairly rare. I read somewhere that in ancient Rome a man was disqualified as a candidate for office because his garden showed neglect.
+> - Eric Hoffer, the longshoreman philosopher
