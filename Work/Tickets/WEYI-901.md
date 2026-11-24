@@ -17,6 +17,23 @@ Table related for routing:
 Table related for transfer:
 `RequestTransfer` (Video and Anymeeting), `RequestRerouteRequest` (OPI and Video)
 
+Basically, you need to implement two APIs: one for Routing History and one for the Transfer Request Chain.
+1. Routing History
+	1. The routing history should include the following fields:
+		- RequestId
+		- ProviderId
+		- ProviderName
+		- ProviderEmail
+		- ProviderCompanyName
+		- RequestSentTime
+		- AcceptedTime
+		- ConfirmedTime
+2. Transfer Request Chain
+	This API should return the complete transfer history for a request.
+	For example, if a request goes through the following transfer chain:
+	2 → 3 → 4 → 5
+	If any RequestId in this chain is provided, the API should return all related requests in the chain, along with the corresponding request times.
+ 
 
 ## Notes
 
