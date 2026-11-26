@@ -39,10 +39,12 @@ Basically, you need to implement two APIs: one for Routing History and one for t
 
 ## Notes
 
-
+There is very little difference between a route and a transfer. 
 
 ## Questions
 
 1. 
 
-	## Todo
+## Todo
+
+1. 
