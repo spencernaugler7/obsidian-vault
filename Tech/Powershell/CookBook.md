@@ -118,7 +118,7 @@ $message = "Hello, $name! Welcome to PowerShell."
 ## Functions
 
 > [!note]
-> function name should start with [[Cookbook#Get Verbs]]
+> function name should start with [[Tech/Powershell/CookBook#Get Verbs]]
 
 ### Basic Function Definition
 
