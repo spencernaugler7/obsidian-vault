@@ -6,6 +6,7 @@
 - https://thingstodoapi.com/
 - https://nomagicpill.site/
 - https://pwn.college/
+- https://mechanical-pencil.com/
 
 ### Uncategorized
 
