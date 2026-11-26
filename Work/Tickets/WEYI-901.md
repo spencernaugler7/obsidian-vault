@@ -29,6 +29,9 @@ Basically, you need to implement two APIs: one for Routing History and one for t
 	- RequestSentTime
 	- AcceptedTime
 	- ConfirmedTime
+	- ParentRequestId 
+	- ChildRequestId
+	- TransferTime
 
 2. Transfer Request Chain
 	This API should return the complete transfer history for a request.
