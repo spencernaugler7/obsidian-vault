@@ -1,0 +1,1 @@
+The principle that reforms should not be made until the reasoning behind the existing state of affairs is understood. The quotation is from the 1929 Chesterton book entitled, _The Thing: Why I Am a Catholic_, in the chapter on "The Drift from Domesticity":
